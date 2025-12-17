@@ -13,7 +13,7 @@ This layer is the boundary where:
 - ordered factual artifacts
 
 No meaning is added here.
-No meaning is removed here.
+No meaning is resolved here.
 
 ---
 
@@ -23,10 +23,10 @@ The atomization layer is responsible for:
 
 - Emitting one or more **event objects** per normalized input record
 - Preserving original ordering when provided
-- Preserving timestamps *only if explicitly present*
+- Preserving timestamps **only if explicitly present in input**
 - Assigning deterministic sequence indices
-- Capturing provenance (source file, row index, record id, etc.)
-- Emitting ambiguity as ambiguity
+- Capturing provenance (source file, record index, identifiers)
+- Emitting ambiguity as ambiguity, without resolution
 
 This layer produces **facts as-recorded**, not conclusions.
 
@@ -37,21 +37,21 @@ This layer produces **facts as-recorded**, not conclusions.
 The atomization layer will NOT:
 
 - Infer causality
-- Infer intent or motive
-- Invent timestamps
+- Infer intent, motive, or responsibility
+- Invent timestamps or temporal relationships
 - Collapse multiple records into summaries
 - Reorder events unless explicitly instructed by invariant rules
-- Clean or correct malformed client data
+- Clean, repair, or normalize client meaning
 - Guess missing fields
 - Interpret payload semantics
 
-If input ambiguity exists, it must survive atomization unchanged.
+If ambiguity exists in the input, it must survive atomization unchanged.
 
 ---
 
 ## Determinism Guarantees
 
-All behavior in this layer must be:
+All behavior in this layer is:
 
 - Fully deterministic
 - Replayable across machines and time
@@ -72,9 +72,9 @@ Forbidden behaviors include:
 ## Event Cardinality Rules
 
 - One input record may produce:
-  - zero events **only if explicitly rejected**
+  - zero events **only via explicit rejection**
   - one event
-  - multiple events (only if rule-driven and documented)
+  - multiple events **only if rule-driven and documented**
 
 Silent drops are forbidden.
 
@@ -85,7 +85,7 @@ Silent drops are forbidden.
 This layer outputs:
 
 - A flat, ordered list of event objects
-- Conforming strictly to `event_schema.json`
+- Strictly conforming to `event_schema.json`
 - With stable ordering and stable field structure
 
 Downstream layers MUST be able to replay these events
@@ -111,15 +111,15 @@ If an input record cannot be atomized deterministically:
 - Enforced by invariants defined in `06_INVARIANTS`
 - Errors defined in `07_ERRORS`
 
-This layer is **not optional**.
+This layer is **mandatory**.
 
-If atomization is incorrect, the entire kernel is invalid.
+If atomization is incorrect, the kernel’s guarantees do not hold.
 
 ---
 
 ## Final Invariant
 
-Atomization preserves truth as recorded.
+Atomization preserves recorded structure and order.
 It does not create meaning.
 
 Any logic that violates that sentence does not belong here.

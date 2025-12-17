@@ -1,71 +1,79 @@
-# normalize — Deterministic Normalization Layer
+# Normalize Layer — Prima Veritas Kernel
 
-## Purpose
+## Responsibility
 
-This layer applies **explicit, deterministic, documented transforms** to ingested data.
-Normalization exists to make inputs **structurally comparable and replayable**, not cleaner,
-nicer, or more meaningful.
+The normalization layer applies **explicit, deterministic, and documented
+transforms** to ingested data.
 
-Normalization is a **mechanical transform**, not interpretation.
+Normalization exists to make inputs **structurally comparable and replayable**.
+It is a mechanical transform layer, not an interpretation or correction layer.
 
 ---
 
 ## What This Layer DOES
 
-- Applies **fixed, declared rules** to raw inputs
+The normalization layer:
+
+- Applies **fixed, declared rules** to ingested artifacts
 - Produces **byte-stable canonical representations**
 - Makes structural differences explicit
 - Preserves ambiguity as ambiguity
-- Refuses inputs that violate declared normalization rules
+- Explicitly refuses inputs that violate declared normalization rules
 
 ---
 
-## What This Layer DOES NOT Do
+## What This Layer DOES NOT DO
 
-❌ No heuristics  
-❌ No guessing missing values  
-❌ No probabilistic logic  
-❌ No schema inference  
-❌ No data repair or reconciliation  
-❌ No domain-specific assumptions  
+The normalization layer will **never**:
 
-If normalization would require judgment, the kernel **must refuse execution**.
+- Use heuristics
+- Guess missing values
+- Apply probabilistic logic
+- Infer schemas or meaning
+- Repair, reconcile, or “fix” data
+- Apply domain-specific assumptions
+
+If normalization would require judgment or interpretation,
+the kernel must refuse execution.
 
 ---
 
 ## Determinism Guarantees
 
-All normalization modules must guarantee:
+All normalization modules guarantee:
 
 - No randomness
 - No timestamps
 - No environment-dependent behavior
-- Fixed ordering only
-- Identical input → identical output (bit-for-bit)
+- Fixed, explicit ordering only
+- Identical input and rules → identical output (bit-for-bit)
 
 ---
 
-## Inputs / Outputs
+## Inputs and Outputs
 
-**Input**
-- Raw artifacts from ingest layer
-- Explicit normalization rules (`normalize_rules.json`)
+**Inputs**
+- Raw artifacts emitted by the ingest layer
+- Explicit normalization rules (`normalize_rules.json`, `normalize_text.rules.json`)
 
-**Output**
+**Outputs**
 - Canonical, deterministic representations
 - No enrichment
-- No loss of original structure beyond declared rules
+- No inferred or repaired structure
+- No loss of information beyond declared rules
 
 ---
 
 ## Change Control
 
-- Normalization behavior is **breaking by default**
-- Any rule change requires:
-  - Version bump
-  - Replay diff
-  - Explicit rationale
-- Silent drift is prohibited
+Normalization behavior is **breaking by default**.
+
+Any change requires:
+- Version bump
+- Replay diff
+- Explicit written rationale
+
+Silent drift is prohibited.
 
 ---
 
@@ -73,12 +81,13 @@ All normalization modules must guarantee:
 
 Normalization prepares data for **atomization**, not analysis.
 
-If a transformation would change meaning, intent, or interpretation,
-it does **not** belong in this layer.
+If a transformation would alter meaning, intent, or interpretation,
+it does not belong in this layer.
 
 ---
 
 ## Final Invariant
 
 Normalization makes structure explicit.
+
 It does not make data correct.

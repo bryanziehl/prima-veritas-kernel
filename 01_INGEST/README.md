@@ -8,6 +8,8 @@ correction, or enrichment.
 
 Ingest is a capture boundary, not a processing layer.
 
+**It establishes the evidentiary boundary between the external world and the kernel.**
+
 ---
 
 ## What Ingest DOES
@@ -49,7 +51,7 @@ All ingest operations guarantee:
 - No randomness
 - No timestamps
 - No environment-dependent behavior
-- No filesystem traversal order dependence
+- **Explicit, declared filesystem traversal order only**
 - Fixed byte-for-byte capture
 - Stable output across machines and executions
 
