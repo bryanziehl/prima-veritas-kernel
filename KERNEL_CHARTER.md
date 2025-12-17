@@ -1,4 +1,4 @@
-PRIMA VERITAS — KERNEL CHARTER (v1.0.1)
+PRIMA VERITAS — KERNEL CHARTER (v1.0.2)
 Purpose
 
 The Prima Veritas Kernel exists to produce deterministic, replayable, verifiable truth artifacts from structured inputs, without interpretation, inference, correction, or enrichment.
@@ -75,6 +75,12 @@ transforms
 event atoms
 
 Ensuring replay yields identical outputs across machines
+
+Canonical Hash Contract
+
+The kernel’s canonical hash attests only to the ordered event ledger produced by the kernel, together with the declared kernel version and specification version.
+
+The canonical hash does not attest to reports, presentations, interpretations, summaries, or downstream artifacts derived from the ledger.
 
 5. Deterministic Replay
 
@@ -156,9 +162,8 @@ declare input/output schemas
 
 be deterministic by construction
 
-Client-specific logic never enters the kernel
-
-Domain adapters live outside the kernel boundary
+Client-specific logic never enters the kernel.
+Domain adapters live outside the kernel boundary.
 
 Legal & Evidentiary Posture
 
@@ -169,6 +174,8 @@ artifacts
 ledgers
 
 replayable sequences
+
+The kernel’s canonical hash certifies recorded order and structure only, not interpretation or meaning.
 
 It does not produce opinions.
 
@@ -194,6 +201,6 @@ The kernel preserves truth; it does not create meaning.
 
 If a feature proposal violates that sentence, it does not belong here.
 
-Charter Version: v1.0.1
+Charter Version: v1.0.2
 Status: ACTIVE
 Scope: All kernel code, present and future

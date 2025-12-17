@@ -3,7 +3,7 @@
  *
  * Responsibility:
  * This file provides a deterministic CLI interface for verifying that
- * a replayed sequence matches an expected ledger hash.
+ * a provided ledger matches an expected canonical ledger hash.
  *
  * Verification is binary: PASS or FAIL.
  *
@@ -27,6 +27,7 @@
  */
 
 import { replaySequence } from "../05_REPLAY/replay_sequence.mjs";
+import { hashObject } from "../04_LEDGER/hash_utils.mjs";
 import { KernelError } from "../07_ERRORS/kernel_error.mjs";
 import { readFileSync } from "fs";
 
@@ -79,23 +80,24 @@ if (!expectedHashPath) {
     const atoms = JSON.parse(readFileSync(atomsPath, "utf8"));
     const expectedHash = readFileSync(expectedHashPath, "utf8").trim();
 
-    const result = await replaySequence({
-      ledger,
-      atoms,
-      returnFinalHash: true
-    });
+    // Canonical verification hash (ledger-centric per KERNEL_CHARTER v1.0.2)
+    const canonicalHash = hashObject(ledger);
 
-    if (!result || !result.finalHash) {
-      fail("Replay did not return a final hash.", "REPLAY_NO_HASH");
-    }
-
-    if (result.finalHash !== expectedHash) {
+    if (canonicalHash !== expectedHash) {
       throw new KernelError(
         "VERIFICATION_FAILED",
         "VERIFY",
-        "Replay hash does not match expected hash."
+        "Ledger hash does not match expected hash."
       );
     }
+
+    // Replay executes only as a determinism check.
+    // Replay output is non-authoritative for verification.
+    await replaySequence({
+      ledger,
+      atoms,
+      returnFinalHash: false
+    });
 
     console.log("VERIFICATION PASSED");
   } catch (err) {

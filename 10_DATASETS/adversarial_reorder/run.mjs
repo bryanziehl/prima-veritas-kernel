@@ -1,3 +1,29 @@
+/**
+ * PRIMA VERITAS KERNEL — DATASET MATERIALIZER (ADVERSARIAL REORDER)
+ *
+ * Responsibility:
+ * Materialize an adversarial dataset where event content is preserved
+ * but ordering is intentionally modified to test determinism guarantees.
+ *
+ * This file is NON-KERNEL code.
+ *
+ * Determinism Guarantees:
+ * - No randomness
+ * - No timestamps
+ * - Explicit, stable paths
+ * - Fixed execution sequence
+ *
+ * Explicit Non-Goals:
+ * - Will not interpret events
+ * - Will not repair malformed input
+ * - Will not explain adversarial intent
+ * - Will not generate reports or summaries
+ *
+ * Stability Contract:
+ * - This file may change freely
+ * - Kernel modules it calls may not
+ */
+
 import fs from "fs";
 import path from "path";
 
@@ -7,16 +33,21 @@ import { atomizeEvents } from "../../03_ATOMIZE/atomize_events.mjs";
 import { buildLedger } from "../../04_LEDGER/build_ledger.mjs";
 import { replaySequence } from "../../05_REPLAY/replay_sequence.mjs";
 
-const ROOT = path.resolve(".");
+// Resolve kernel root explicitly (never depend on CWD)
+const KERNEL_ROOT = path.resolve(import.meta.dirname, "..", "..");
+
 const DATASET_DIR = path.join(
-  ROOT,
+  KERNEL_ROOT,
   "10_DATASETS",
   "adversarial_reorder"
 );
 
 const INPUT = path.join(DATASET_DIR, "input.json");
 const NORMALIZE_RULES = JSON.parse(
-  fs.readFileSync(path.join("02_NORMALIZE", "normalize_rules.json"), "utf8")
+  fs.readFileSync(
+    path.join(KERNEL_ROOT, "02_NORMALIZE", "normalize_rules.json"),
+    "utf8"
+  )
 );
 
 // 1. ingest
@@ -32,8 +63,12 @@ const atoms = atomizeEvents(sequence);
 // 4. ledger
 const ledger = buildLedger(atoms);
 
-// 5. replay
-const replay = replaySequence(ledger);
+// 5. replay (non-authoritative, determinism check only)
+await replaySequence({
+  ledger,
+  atoms,
+  returnFinalHash: false
+});
 
 // write artifacts
 fs.writeFileSync(
