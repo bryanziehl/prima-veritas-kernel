@@ -29,26 +29,35 @@
  */
 
 import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+/**
+ * Resolve kernel-owned normalization rules deterministically.
+ */
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const RULES_PATH = path.join(__dirname, "normalize_rules.json");
+
+function loadRules() {
+  const raw = fs.readFileSync(RULES_PATH, "utf8");
+  return JSON.parse(raw);
+}
 
 /**
  * Normalize a text payload using explicit normalization rules.
  *
  * @param {string} rawText
- * @param {Object} rules
- * Rules may include only explicit, boolean or enum transforms, e.g.:
- *   {
- *     "normalize_newlines": "LF",
- *     "strip_trailing_whitespace": true
- *   }
- *
  * @returns {string}
  */
-export function normalizeText(rawText, rules) {
+export function normalizeText(rawText) {
   if (typeof rawText !== "string") {
     throw new Error("NORMALIZE_TEXT_INVALID_INPUT: rawText must be a string");
   }
 
-  if (typeof rules !== "object" || rules === null) {
+  const rules = loadRules();
+
+  if (!rules || typeof rules !== "object") {
     throw new Error("NORMALIZE_TEXT_INVALID_RULES");
   }
 
@@ -79,9 +88,3 @@ export function normalizeText(rawText, rules) {
 
   return output;
 }
-
-
-
-
-
-

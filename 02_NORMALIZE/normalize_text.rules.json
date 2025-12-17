@@ -1,0 +1,25 @@
+{
+  "mode": "line_preserving",
+  "rules": [
+    {
+      "id": "preserve_line_order",
+      "description": "Lines must be processed in original order.",
+      "violation": "ERROR"
+    },
+    {
+      "id": "no_line_merging",
+      "description": "Lines may not be merged or split during normalization.",
+      "violation": "ERROR"
+    },
+    {
+      "id": "trim_trailing_whitespace",
+      "description": "Trailing whitespace may be removed deterministically.",
+      "violation": "ALLOW"
+    },
+    {
+      "id": "preserve_content",
+      "description": "Text content must not be altered, inferred, or corrected.",
+      "violation": "ERROR"
+    }
+  ]
+}
