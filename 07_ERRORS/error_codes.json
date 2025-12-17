@@ -1,0 +1,48 @@
+{
+  "KERNEL_ERROR_VERSION": "1.0",
+
+  "INGEST_INVALID_INPUT": {
+    "stage": "ingest",
+    "message": "Input failed structural validation or could not be read deterministically."
+  },
+
+  "INGEST_UNSUPPORTED_FORMAT": {
+    "stage": "ingest",
+    "message": "Input format is unsupported by the kernel."
+  },
+
+  "NORMALIZE_RULE_VIOLATION": {
+    "stage": "normalize",
+    "message": "Normalization rules were violated or produced a non-deterministic result."
+  },
+
+  "ATOMIZE_SCHEMA_MISMATCH": {
+    "stage": "atomize",
+    "message": "Event extraction failed due to schema mismatch or ambiguous structure."
+  },
+
+  "LEDGER_ORDERING_VIOLATION": {
+    "stage": "ledger",
+    "message": "Event ordering invariants could not be enforced."
+  },
+
+  "LEDGER_HASH_FAILURE": {
+    "stage": "ledger",
+    "message": "Hash chain generation failed or produced inconsistent results."
+  },
+
+  "REPLAY_MISMATCH": {
+    "stage": "replay",
+    "message": "Replay output does not match the original deterministic ledger."
+  },
+
+  "INVARIANT_BREACH": {
+    "stage": "system",
+    "message": "A kernel invariant was violated and execution was halted."
+  },
+
+  "TEST_GOLDEN_MISMATCH": {
+    "stage": "tests",
+    "message": "Golden test comparison failed."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "ordering_source": "input_provided",
+  "rules": [
+    {
+      "id": "preserve_input_order",
+      "description": "If input provides explicit ordering, that ordering must be preserved exactly.",
+      "violation": "ERROR"
+    },
+    {
+      "id": "stable_event_sequence",
+      "description": "Atomized events must maintain stable relative order across replays.",
+      "violation": "ERROR"
+    },
+    {
+      "id": "no_implicit_reordering",
+      "description": "Kernel may not reorder events unless explicitly instructed by deterministic rule.",
+      "violation": "ERROR"
+    }
+  ]
+}

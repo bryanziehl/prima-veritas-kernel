@@ -1,0 +1,17 @@
+[
+  {
+    "id": "rec-001",
+    "value": 10,
+    "timestamp": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "rec-002",
+    "value": 20,
+    "timestamp": "2024-01-01T00:01:00Z"
+  },
+  {
+    "id": "rec-003",
+    "value": 30,
+    "timestamp": null
+  }
+]

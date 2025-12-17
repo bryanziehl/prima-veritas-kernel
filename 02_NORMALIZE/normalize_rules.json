@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "file": "normalize_rules.json",
+    "purpose": "Declarative normalization rules for structured inputs",
+    "scope": "Kernel-only. No client or domain logic permitted.",
+    "stability": "Any change requires version bump and replay diff"
+  },
+
+  "rules": {
+    "sort_object_keys": true,
+    "enforce_array_order": true
+  },
+
+  "invariants": {
+    "no_type_coercion": true,
+    "no_default_injection": true,
+    "no_missing_field_inference": true,
+    "no_schema_inference": true
+  },
+
+  "refusals": {
+    "unspecified_array_order": "REJECT",
+    "cyclic_structures": "REJECT",
+    "non_object_rules": "REJECT"
+  }
+}

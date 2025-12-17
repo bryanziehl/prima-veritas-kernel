@@ -1,0 +1,14 @@
+# Non-kernel workspace (explicitly excluded)
+90_CASEWORK_REPORTS/
+91_DIAGNOSTICS/
+92_CASES/
+93_TEMPLATES/
+94_TOOLS/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
+
+# Node noise (defensive, not required today)
+node_modules/

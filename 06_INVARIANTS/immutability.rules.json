@@ -1,0 +1,20 @@
+{
+  "immutability_scope": "kernel_outputs",
+  "rules": [
+    {
+      "id": "ledger_immutable",
+      "description": "Once written, ledger entries must never be modified.",
+      "violation": "ERROR"
+    },
+    {
+      "id": "hash_chain_locked",
+      "description": "Hash chains must be append-only and replay-stable.",
+      "violation": "ERROR"
+    },
+    {
+      "id": "no_in_place_mutation",
+      "description": "Kernel stages may not mutate prior artifacts in place.",
+      "violation": "ERROR"
+    }
+  ]
+}

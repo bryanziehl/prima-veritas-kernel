@@ -1,0 +1,88 @@
+{
+  "raw": {
+    "type": "INGEST_FILE",
+    "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\basic_case.json",
+    "filename": "basic_case.json",
+    "size_bytes": 501,
+    "hash_sha256": "c9f756f2505a417ed5683a9548a5564089b64154fcb0f8ffad71fb7f8abfbea5",
+    "raw_bytes_base64": "ew0KICAiY2FzZV9pZCI6ICJCQVNJQy1DQVNFLTAwMSIsDQogICJzb3VyY2UiOiAidW5pdF90ZXN0X2ZpeHR1cmUiLA0KICAicmVjb3JkcyI6IFsNCiAgICB7DQogICAgICAicmVjb3JkX2lkIjogInIxIiwNCiAgICAgICJ0aW1lc3RhbXAiOiAiMjAyMy0xMC0wMVQwOTowMDowMFoiLA0KICAgICAgImFjdG9yIjogInVzZXJfYSIsDQogICAgICAiYWN0aW9uIjogInN1Ym1pdCIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMCwNCiAgICAgICAgImN1cnJlbmN5IjogIlVTRCINCiAgICAgIH0NCiAgICB9LA0KICAgIHsNCiAgICAgICJyZWNvcmRfaWQiOiAicjIiLA0KICAgICAgInRpbWVzdGFtcCI6ICIyMDIzLTEwLTAxVDA5OjA1OjAwWiIsDQogICAgICAiYWN0b3IiOiAidXNlcl9iIiwNCiAgICAgICJhY3Rpb24iOiAiYXBwcm92ZSIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMA0KICAgICAgfQ0KICAgIH0NCiAgXQ0KfQ0K"
+  },
+  "normalized": {
+    "filename": "basic_case.json",
+    "hash_sha256": "c9f756f2505a417ed5683a9548a5564089b64154fcb0f8ffad71fb7f8abfbea5",
+    "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\basic_case.json",
+    "raw_bytes_base64": "ew0KICAiY2FzZV9pZCI6ICJCQVNJQy1DQVNFLTAwMSIsDQogICJzb3VyY2UiOiAidW5pdF90ZXN0X2ZpeHR1cmUiLA0KICAicmVjb3JkcyI6IFsNCiAgICB7DQogICAgICAicmVjb3JkX2lkIjogInIxIiwNCiAgICAgICJ0aW1lc3RhbXAiOiAiMjAyMy0xMC0wMVQwOTowMDowMFoiLA0KICAgICAgImFjdG9yIjogInVzZXJfYSIsDQogICAgICAiYWN0aW9uIjogInN1Ym1pdCIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMCwNCiAgICAgICAgImN1cnJlbmN5IjogIlVTRCINCiAgICAgIH0NCiAgICB9LA0KICAgIHsNCiAgICAgICJyZWNvcmRfaWQiOiAicjIiLA0KICAgICAgInRpbWVzdGFtcCI6ICIyMDIzLTEwLTAxVDA5OjA1OjAwWiIsDQogICAgICAiYWN0b3IiOiAidXNlcl9iIiwNCiAgICAgICJhY3Rpb24iOiAiYXBwcm92ZSIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMA0KICAgICAgfQ0KICAgIH0NCiAgXQ0KfQ0K",
+    "size_bytes": 501,
+    "type": "INGEST_FILE"
+  },
+  "events": [
+    {
+      "event_id": "deterministic:0",
+      "sequence_index": 0,
+      "timestamp": null,
+      "source": null,
+      "payload": {
+        "filename": "basic_case.json",
+        "hash_sha256": "c9f756f2505a417ed5683a9548a5564089b64154fcb0f8ffad71fb7f8abfbea5",
+        "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\basic_case.json",
+        "raw_bytes_base64": "ew0KICAiY2FzZV9pZCI6ICJCQVNJQy1DQVNFLTAwMSIsDQogICJzb3VyY2UiOiAidW5pdF90ZXN0X2ZpeHR1cmUiLA0KICAicmVjb3JkcyI6IFsNCiAgICB7DQogICAgICAicmVjb3JkX2lkIjogInIxIiwNCiAgICAgICJ0aW1lc3RhbXAiOiAiMjAyMy0xMC0wMVQwOTowMDowMFoiLA0KICAgICAgImFjdG9yIjogInVzZXJfYSIsDQogICAgICAiYWN0aW9uIjogInN1Ym1pdCIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMCwNCiAgICAgICAgImN1cnJlbmN5IjogIlVTRCINCiAgICAgIH0NCiAgICB9LA0KICAgIHsNCiAgICAgICJyZWNvcmRfaWQiOiAicjIiLA0KICAgICAgInRpbWVzdGFtcCI6ICIyMDIzLTEwLTAxVDA5OjA1OjAwWiIsDQogICAgICAiYWN0b3IiOiAidXNlcl9iIiwNCiAgICAgICJhY3Rpb24iOiAiYXBwcm92ZSIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMA0KICAgICAgfQ0KICAgIH0NCiAgXQ0KfQ0K",
+        "size_bytes": 501,
+        "type": "INGEST_FILE"
+      },
+      "provenance": null,
+      "notes": null
+    }
+  ],
+  "ledger": {
+    "header": {
+      "kernel_version": "0.1.0",
+      "spec_version": "0.1.0",
+      "hash_algorithm": "sha256"
+    },
+    "entry_count": 1,
+    "entries": [
+      {
+        "index": 0,
+        "event_id": "deterministic:0",
+        "event_hash": "dfc0b75e3eae26a7f1356e73101fa899141a8fd731e9a8d1db7baab94d88acaa",
+        "previous_hash": null,
+        "event": {
+          "event_id": "deterministic:0",
+          "sequence_index": 0,
+          "timestamp": null,
+          "source": null,
+          "payload": {
+            "filename": "basic_case.json",
+            "hash_sha256": "c9f756f2505a417ed5683a9548a5564089b64154fcb0f8ffad71fb7f8abfbea5",
+            "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\basic_case.json",
+            "raw_bytes_base64": "ew0KICAiY2FzZV9pZCI6ICJCQVNJQy1DQVNFLTAwMSIsDQogICJzb3VyY2UiOiAidW5pdF90ZXN0X2ZpeHR1cmUiLA0KICAicmVjb3JkcyI6IFsNCiAgICB7DQogICAgICAicmVjb3JkX2lkIjogInIxIiwNCiAgICAgICJ0aW1lc3RhbXAiOiAiMjAyMy0xMC0wMVQwOTowMDowMFoiLA0KICAgICAgImFjdG9yIjogInVzZXJfYSIsDQogICAgICAiYWN0aW9uIjogInN1Ym1pdCIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMCwNCiAgICAgICAgImN1cnJlbmN5IjogIlVTRCINCiAgICAgIH0NCiAgICB9LA0KICAgIHsNCiAgICAgICJyZWNvcmRfaWQiOiAicjIiLA0KICAgICAgInRpbWVzdGFtcCI6ICIyMDIzLTEwLTAxVDA5OjA1OjAwWiIsDQogICAgICAiYWN0b3IiOiAidXNlcl9iIiwNCiAgICAgICJhY3Rpb24iOiAiYXBwcm92ZSIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMA0KICAgICAgfQ0KICAgIH0NCiAgXQ0KfQ0K",
+            "size_bytes": 501,
+            "type": "INGEST_FILE"
+          },
+          "provenance": null,
+          "notes": null
+        },
+        "entry_hash": "6a1a01883be7126e1b10a4247b510e09fd8fcb57b3c73624a43f4b7cbfab9a2e"
+      }
+    ],
+    "ledger_hash": "7923c31f9fe650ae479c1090b0dcd83a6a23fc6d3cc3310c43044ff91fec5558"
+  },
+  "replay": [
+    {
+      "event_id": "deterministic:0",
+      "sequence_index": 0,
+      "timestamp": null,
+      "source": null,
+      "payload": {
+        "filename": "basic_case.json",
+        "hash_sha256": "c9f756f2505a417ed5683a9548a5564089b64154fcb0f8ffad71fb7f8abfbea5",
+        "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\basic_case.json",
+        "raw_bytes_base64": "ew0KICAiY2FzZV9pZCI6ICJCQVNJQy1DQVNFLTAwMSIsDQogICJzb3VyY2UiOiAidW5pdF90ZXN0X2ZpeHR1cmUiLA0KICAicmVjb3JkcyI6IFsNCiAgICB7DQogICAgICAicmVjb3JkX2lkIjogInIxIiwNCiAgICAgICJ0aW1lc3RhbXAiOiAiMjAyMy0xMC0wMVQwOTowMDowMFoiLA0KICAgICAgImFjdG9yIjogInVzZXJfYSIsDQogICAgICAiYWN0aW9uIjogInN1Ym1pdCIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMCwNCiAgICAgICAgImN1cnJlbmN5IjogIlVTRCINCiAgICAgIH0NCiAgICB9LA0KICAgIHsNCiAgICAgICJyZWNvcmRfaWQiOiAicjIiLA0KICAgICAgInRpbWVzdGFtcCI6ICIyMDIzLTEwLTAxVDA5OjA1OjAwWiIsDQogICAgICAiYWN0b3IiOiAidXNlcl9iIiwNCiAgICAgICJhY3Rpb24iOiAiYXBwcm92ZSIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMA0KICAgICAgfQ0KICAgIH0NCiAgXQ0KfQ0K",
+        "size_bytes": 501,
+        "type": "INGEST_FILE"
+      },
+      "provenance": null,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "raw": {
+    "type": "INGEST_FILE",
+    "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\nested_object.json",
+    "filename": "nested_object.json",
+    "size_bytes": 276,
+    "hash_sha256": "faa5d2f14098a362d923bee9b2bd71225857a3ad91892f1161ba96124ca54a55",
+    "raw_bytes_base64": "ew0KICAiWiI6IHsNCiAgICAiYiI6IDIsDQogICAgImEiOiAxLA0KICAgICJpbm5lciI6IHsNCiAgICAgICJ6IjogImxhc3QiLA0KICAgICAgImEiOiAiZmlyc3QiLA0KICAgICAgImFyciI6IFsNCiAgICAgICAgeyAiayI6IDIsICJqIjogMSB9LA0KICAgICAgICB7ICJqIjogMSwgImsiOiAyIH0NCiAgICAgIF0NCiAgICB9DQogIH0sDQogICJBIjogWw0KICAgIHsgInkiOiAyLCAieCI6IDEgfSwNCiAgICB7ICJ4IjogMSwgInkiOiAyIH0NCiAgXSwNCiAgIm5vdGVzIjogbnVsbA0KfQ0K"
+  },
+  "normalized": {
+    "filename": "nested_object.json",
+    "hash_sha256": "faa5d2f14098a362d923bee9b2bd71225857a3ad91892f1161ba96124ca54a55",
+    "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\nested_object.json",
+    "raw_bytes_base64": "ew0KICAiWiI6IHsNCiAgICAiYiI6IDIsDQogICAgImEiOiAxLA0KICAgICJpbm5lciI6IHsNCiAgICAgICJ6IjogImxhc3QiLA0KICAgICAgImEiOiAiZmlyc3QiLA0KICAgICAgImFyciI6IFsNCiAgICAgICAgeyAiayI6IDIsICJqIjogMSB9LA0KICAgICAgICB7ICJqIjogMSwgImsiOiAyIH0NCiAgICAgIF0NCiAgICB9DQogIH0sDQogICJBIjogWw0KICAgIHsgInkiOiAyLCAieCI6IDEgfSwNCiAgICB7ICJ4IjogMSwgInkiOiAyIH0NCiAgXSwNCiAgIm5vdGVzIjogbnVsbA0KfQ0K",
+    "size_bytes": 276,
+    "type": "INGEST_FILE"
+  },
+  "events": [
+    {
+      "event_id": "deterministic:0",
+      "sequence_index": 0,
+      "timestamp": null,
+      "source": null,
+      "payload": {
+        "filename": "nested_object.json",
+        "hash_sha256": "faa5d2f14098a362d923bee9b2bd71225857a3ad91892f1161ba96124ca54a55",
+        "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\nested_object.json",
+        "raw_bytes_base64": "ew0KICAiWiI6IHsNCiAgICAiYiI6IDIsDQogICAgImEiOiAxLA0KICAgICJpbm5lciI6IHsNCiAgICAgICJ6IjogImxhc3QiLA0KICAgICAgImEiOiAiZmlyc3QiLA0KICAgICAgImFyciI6IFsNCiAgICAgICAgeyAiayI6IDIsICJqIjogMSB9LA0KICAgICAgICB7ICJqIjogMSwgImsiOiAyIH0NCiAgICAgIF0NCiAgICB9DQogIH0sDQogICJBIjogWw0KICAgIHsgInkiOiAyLCAieCI6IDEgfSwNCiAgICB7ICJ4IjogMSwgInkiOiAyIH0NCiAgXSwNCiAgIm5vdGVzIjogbnVsbA0KfQ0K",
+        "size_bytes": 276,
+        "type": "INGEST_FILE"
+      },
+      "provenance": null,
+      "notes": null
+    }
+  ],
+  "ledger": {
+    "header": {
+      "kernel_version": "0.1.0",
+      "spec_version": "0.1.0",
+      "hash_algorithm": "sha256"
+    },
+    "entry_count": 1,
+    "entries": [
+      {
+        "index": 0,
+        "event_id": "deterministic:0",
+        "event_hash": "2da9b434d99c1f2ec47ad602d357d03188f3c9e7f1fd5775255adc4740044014",
+        "previous_hash": null,
+        "event": {
+          "event_id": "deterministic:0",
+          "sequence_index": 0,
+          "timestamp": null,
+          "source": null,
+          "payload": {
+            "filename": "nested_object.json",
+            "hash_sha256": "faa5d2f14098a362d923bee9b2bd71225857a3ad91892f1161ba96124ca54a55",
+            "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\nested_object.json",
+            "raw_bytes_base64": "ew0KICAiWiI6IHsNCiAgICAiYiI6IDIsDQogICAgImEiOiAxLA0KICAgICJpbm5lciI6IHsNCiAgICAgICJ6IjogImxhc3QiLA0KICAgICAgImEiOiAiZmlyc3QiLA0KICAgICAgImFyciI6IFsNCiAgICAgICAgeyAiayI6IDIsICJqIjogMSB9LA0KICAgICAgICB7ICJqIjogMSwgImsiOiAyIH0NCiAgICAgIF0NCiAgICB9DQogIH0sDQogICJBIjogWw0KICAgIHsgInkiOiAyLCAieCI6IDEgfSwNCiAgICB7ICJ4IjogMSwgInkiOiAyIH0NCiAgXSwNCiAgIm5vdGVzIjogbnVsbA0KfQ0K",
+            "size_bytes": 276,
+            "type": "INGEST_FILE"
+          },
+          "provenance": null,
+          "notes": null
+        },
+        "entry_hash": "2edaaffb03c0adbf56a72e4fc69995be2ddf8d5afe919b6432735c3e5116f5bc"
+      }
+    ],
+    "ledger_hash": "dac372d1e05ae6cf2700493fb13256a2e19cf1f6183f1a14a552b94df162193d"
+  },
+  "replay": [
+    {
+      "event_id": "deterministic:0",
+      "sequence_index": 0,
+      "timestamp": null,
+      "source": null,
+      "payload": {
+        "filename": "nested_object.json",
+        "hash_sha256": "faa5d2f14098a362d923bee9b2bd71225857a3ad91892f1161ba96124ca54a55",
+        "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\nested_object.json",
+        "raw_bytes_base64": "ew0KICAiWiI6IHsNCiAgICAiYiI6IDIsDQogICAgImEiOiAxLA0KICAgICJpbm5lciI6IHsNCiAgICAgICJ6IjogImxhc3QiLA0KICAgICAgImEiOiAiZmlyc3QiLA0KICAgICAgImFyciI6IFsNCiAgICAgICAgeyAiayI6IDIsICJqIjogMSB9LA0KICAgICAgICB7ICJqIjogMSwgImsiOiAyIH0NCiAgICAgIF0NCiAgICB9DQogIH0sDQogICJBIjogWw0KICAgIHsgInkiOiAyLCAieCI6IDEgfSwNCiAgICB7ICJ4IjogMSwgInkiOiAyIH0NCiAgXSwNCiAgIm5vdGVzIjogbnVsbA0KfQ0K",
+        "size_bytes": 276,
+        "type": "INGEST_FILE"
+      },
+      "provenance": null,
+      "notes": null
+    }
+  ]
+}

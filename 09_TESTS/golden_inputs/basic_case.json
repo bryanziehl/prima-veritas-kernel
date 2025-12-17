@@ -1,0 +1,25 @@
+{
+  "case_id": "BASIC-CASE-001",
+  "source": "unit_test_fixture",
+  "records": [
+    {
+      "record_id": "r1",
+      "timestamp": "2023-10-01T09:00:00Z",
+      "actor": "user_a",
+      "action": "submit",
+      "payload": {
+        "amount": 100,
+        "currency": "USD"
+      }
+    },
+    {
+      "record_id": "r2",
+      "timestamp": "2023-10-01T09:05:00Z",
+      "actor": "user_b",
+      "action": "approve",
+      "payload": {
+        "amount": 100
+      }
+    }
+  ]
+}

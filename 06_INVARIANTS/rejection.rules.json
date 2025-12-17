@@ -1,0 +1,20 @@
+{
+  "rejection_policy": "fail_fast",
+  "rules": [
+    {
+      "id": "malformed_input",
+      "description": "Malformed or unreadable input must cause immediate rejection.",
+      "violation": "ERROR"
+    },
+    {
+      "id": "nondeterministic_behavior",
+      "description": "Any detected nondeterminism must halt execution.",
+      "violation": "ERROR"
+    },
+    {
+      "id": "implicit_assumption",
+      "description": "Any behavior requiring assumption must be rejected.",
+      "violation": "ERROR"
+    }
+  ]
+}

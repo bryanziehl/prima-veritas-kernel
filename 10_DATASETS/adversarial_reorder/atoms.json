@@ -1,0 +1,18 @@
+[
+  {
+    "event_id": "deterministic:0",
+    "sequence_index": 0,
+    "timestamp": null,
+    "source": null,
+    "payload": {
+      "filename": "input.json",
+      "hash_sha256": "1d32830278311d3b309cafa66389aa8780e9c0903b0e7f349679e827f385e175",
+      "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\10_DATASETS\\adversarial_reorder\\input.json",
+      "raw_bytes_base64": "Ww0KICB7DQogICAgImlkIjogIkEiLA0KICAgICJ0aW1lc3RhbXAiOiAiMjAyNC0wMS0wMVQwMDowMDowMVoiLA0KICAgICJ2YWx1ZSI6IDEwMA0KICB9LA0KICB7DQogICAgImlkIjogIkIiLA0KICAgICJ0aW1lc3RhbXAiOiAiMjAyNC0wMS0wMVQwMDowMDowMloiLA0KICAgICJ2YWx1ZSI6IDIwMA0KICB9LA0KICB7DQogICAgImlkIjogIkMiLA0KICAgICJ0aW1lc3RhbXAiOiAiMjAyNC0wMS0wMVQwMDowMDowM1oiLA0KICAgICJ2YWx1ZSI6IDMwMA0KICB9DQpdDQo=",
+      "size_bytes": 266,
+      "type": "INGEST_FILE"
+    },
+    "provenance": null,
+    "notes": null
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "record": {
+    "id": "A",
+    "metrics": {
+      "value": 100,
+      "units": "usd"
+    }
+  },
+  "timestamp": "2024-01-01T00:00:01Z"
+}

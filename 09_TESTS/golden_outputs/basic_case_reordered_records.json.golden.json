@@ -1,0 +1,88 @@
+{
+  "raw": {
+    "type": "INGEST_FILE",
+    "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\basic_case_reordered_records.json",
+    "filename": "basic_case_reordered_records.json",
+    "size_bytes": 511,
+    "hash_sha256": "be65dddd5ddd50f95a6a83b69984de2c2f192558cc022eff130ae2328c4349cb",
+    "raw_bytes_base64": "ew0KICAiY2FzZV9pZCI6ICJCQVNJQy1DQVNFLTAwMS1SRU9SREVSRUQiLA0KICAic291cmNlIjogInVuaXRfdGVzdF9maXh0dXJlIiwNCiAgInJlY29yZHMiOiBbDQogICAgew0KICAgICAgInJlY29yZF9pZCI6ICJyMiIsDQogICAgICAidGltZXN0YW1wIjogIjIwMjMtMTAtMDFUMDk6MDU6MDBaIiwNCiAgICAgICJhY3RvciI6ICJ1c2VyX2IiLA0KICAgICAgImFjdGlvbiI6ICJhcHByb3ZlIiwNCiAgICAgICJwYXlsb2FkIjogew0KICAgICAgICAiYW1vdW50IjogMTAwDQogICAgICB9DQogICAgfSwNCiAgICB7DQogICAgICAicmVjb3JkX2lkIjogInIxIiwNCiAgICAgICJ0aW1lc3RhbXAiOiAiMjAyMy0xMC0wMVQwOTowMDowMFoiLA0KICAgICAgImFjdG9yIjogInVzZXJfYSIsDQogICAgICAiYWN0aW9uIjogInN1Ym1pdCIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMCwNCiAgICAgICAgImN1cnJlbmN5IjogIlVTRCINCiAgICAgIH0NCiAgICB9DQogIF0NCn0NCg=="
+  },
+  "normalized": {
+    "filename": "basic_case_reordered_records.json",
+    "hash_sha256": "be65dddd5ddd50f95a6a83b69984de2c2f192558cc022eff130ae2328c4349cb",
+    "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\basic_case_reordered_records.json",
+    "raw_bytes_base64": "ew0KICAiY2FzZV9pZCI6ICJCQVNJQy1DQVNFLTAwMS1SRU9SREVSRUQiLA0KICAic291cmNlIjogInVuaXRfdGVzdF9maXh0dXJlIiwNCiAgInJlY29yZHMiOiBbDQogICAgew0KICAgICAgInJlY29yZF9pZCI6ICJyMiIsDQogICAgICAidGltZXN0YW1wIjogIjIwMjMtMTAtMDFUMDk6MDU6MDBaIiwNCiAgICAgICJhY3RvciI6ICJ1c2VyX2IiLA0KICAgICAgImFjdGlvbiI6ICJhcHByb3ZlIiwNCiAgICAgICJwYXlsb2FkIjogew0KICAgICAgICAiYW1vdW50IjogMTAwDQogICAgICB9DQogICAgfSwNCiAgICB7DQogICAgICAicmVjb3JkX2lkIjogInIxIiwNCiAgICAgICJ0aW1lc3RhbXAiOiAiMjAyMy0xMC0wMVQwOTowMDowMFoiLA0KICAgICAgImFjdG9yIjogInVzZXJfYSIsDQogICAgICAiYWN0aW9uIjogInN1Ym1pdCIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMCwNCiAgICAgICAgImN1cnJlbmN5IjogIlVTRCINCiAgICAgIH0NCiAgICB9DQogIF0NCn0NCg==",
+    "size_bytes": 511,
+    "type": "INGEST_FILE"
+  },
+  "events": [
+    {
+      "event_id": "deterministic:0",
+      "sequence_index": 0,
+      "timestamp": null,
+      "source": null,
+      "payload": {
+        "filename": "basic_case_reordered_records.json",
+        "hash_sha256": "be65dddd5ddd50f95a6a83b69984de2c2f192558cc022eff130ae2328c4349cb",
+        "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\basic_case_reordered_records.json",
+        "raw_bytes_base64": "ew0KICAiY2FzZV9pZCI6ICJCQVNJQy1DQVNFLTAwMS1SRU9SREVSRUQiLA0KICAic291cmNlIjogInVuaXRfdGVzdF9maXh0dXJlIiwNCiAgInJlY29yZHMiOiBbDQogICAgew0KICAgICAgInJlY29yZF9pZCI6ICJyMiIsDQogICAgICAidGltZXN0YW1wIjogIjIwMjMtMTAtMDFUMDk6MDU6MDBaIiwNCiAgICAgICJhY3RvciI6ICJ1c2VyX2IiLA0KICAgICAgImFjdGlvbiI6ICJhcHByb3ZlIiwNCiAgICAgICJwYXlsb2FkIjogew0KICAgICAgICAiYW1vdW50IjogMTAwDQogICAgICB9DQogICAgfSwNCiAgICB7DQogICAgICAicmVjb3JkX2lkIjogInIxIiwNCiAgICAgICJ0aW1lc3RhbXAiOiAiMjAyMy0xMC0wMVQwOTowMDowMFoiLA0KICAgICAgImFjdG9yIjogInVzZXJfYSIsDQogICAgICAiYWN0aW9uIjogInN1Ym1pdCIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMCwNCiAgICAgICAgImN1cnJlbmN5IjogIlVTRCINCiAgICAgIH0NCiAgICB9DQogIF0NCn0NCg==",
+        "size_bytes": 511,
+        "type": "INGEST_FILE"
+      },
+      "provenance": null,
+      "notes": null
+    }
+  ],
+  "ledger": {
+    "header": {
+      "kernel_version": "0.1.0",
+      "spec_version": "0.1.0",
+      "hash_algorithm": "sha256"
+    },
+    "entry_count": 1,
+    "entries": [
+      {
+        "index": 0,
+        "event_id": "deterministic:0",
+        "event_hash": "b5b0e5fb412bff606a95982d72212ecec492dcf7f775b4f2034e048a6384304f",
+        "previous_hash": null,
+        "event": {
+          "event_id": "deterministic:0",
+          "sequence_index": 0,
+          "timestamp": null,
+          "source": null,
+          "payload": {
+            "filename": "basic_case_reordered_records.json",
+            "hash_sha256": "be65dddd5ddd50f95a6a83b69984de2c2f192558cc022eff130ae2328c4349cb",
+            "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\basic_case_reordered_records.json",
+            "raw_bytes_base64": "ew0KICAiY2FzZV9pZCI6ICJCQVNJQy1DQVNFLTAwMS1SRU9SREVSRUQiLA0KICAic291cmNlIjogInVuaXRfdGVzdF9maXh0dXJlIiwNCiAgInJlY29yZHMiOiBbDQogICAgew0KICAgICAgInJlY29yZF9pZCI6ICJyMiIsDQogICAgICAidGltZXN0YW1wIjogIjIwMjMtMTAtMDFUMDk6MDU6MDBaIiwNCiAgICAgICJhY3RvciI6ICJ1c2VyX2IiLA0KICAgICAgImFjdGlvbiI6ICJhcHByb3ZlIiwNCiAgICAgICJwYXlsb2FkIjogew0KICAgICAgICAiYW1vdW50IjogMTAwDQogICAgICB9DQogICAgfSwNCiAgICB7DQogICAgICAicmVjb3JkX2lkIjogInIxIiwNCiAgICAgICJ0aW1lc3RhbXAiOiAiMjAyMy0xMC0wMVQwOTowMDowMFoiLA0KICAgICAgImFjdG9yIjogInVzZXJfYSIsDQogICAgICAiYWN0aW9uIjogInN1Ym1pdCIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMCwNCiAgICAgICAgImN1cnJlbmN5IjogIlVTRCINCiAgICAgIH0NCiAgICB9DQogIF0NCn0NCg==",
+            "size_bytes": 511,
+            "type": "INGEST_FILE"
+          },
+          "provenance": null,
+          "notes": null
+        },
+        "entry_hash": "58fe88f3f93183ad812c51b2a7f7118e5a0b6cb19e31e2546d27df09a6baa31d"
+      }
+    ],
+    "ledger_hash": "b33942932fce51eca66afa212be3484fe027dc3e3153da1254878bf2f34fc426"
+  },
+  "replay": [
+    {
+      "event_id": "deterministic:0",
+      "sequence_index": 0,
+      "timestamp": null,
+      "source": null,
+      "payload": {
+        "filename": "basic_case_reordered_records.json",
+        "hash_sha256": "be65dddd5ddd50f95a6a83b69984de2c2f192558cc022eff130ae2328c4349cb",
+        "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\09_TESTS\\golden_inputs\\basic_case_reordered_records.json",
+        "raw_bytes_base64": "ew0KICAiY2FzZV9pZCI6ICJCQVNJQy1DQVNFLTAwMS1SRU9SREVSRUQiLA0KICAic291cmNlIjogInVuaXRfdGVzdF9maXh0dXJlIiwNCiAgInJlY29yZHMiOiBbDQogICAgew0KICAgICAgInJlY29yZF9pZCI6ICJyMiIsDQogICAgICAidGltZXN0YW1wIjogIjIwMjMtMTAtMDFUMDk6MDU6MDBaIiwNCiAgICAgICJhY3RvciI6ICJ1c2VyX2IiLA0KICAgICAgImFjdGlvbiI6ICJhcHByb3ZlIiwNCiAgICAgICJwYXlsb2FkIjogew0KICAgICAgICAiYW1vdW50IjogMTAwDQogICAgICB9DQogICAgfSwNCiAgICB7DQogICAgICAicmVjb3JkX2lkIjogInIxIiwNCiAgICAgICJ0aW1lc3RhbXAiOiAiMjAyMy0xMC0wMVQwOTowMDowMFoiLA0KICAgICAgImFjdG9yIjogInVzZXJfYSIsDQogICAgICAiYWN0aW9uIjogInN1Ym1pdCIsDQogICAgICAicGF5bG9hZCI6IHsNCiAgICAgICAgImFtb3VudCI6IDEwMCwNCiAgICAgICAgImN1cnJlbmN5IjogIlVTRCINCiAgICAgIH0NCiAgICB9DQogIF0NCn0NCg==",
+        "size_bytes": 511,
+        "type": "INGEST_FILE"
+      },
+      "provenance": null,
+      "notes": null
+    }
+  ]
+}

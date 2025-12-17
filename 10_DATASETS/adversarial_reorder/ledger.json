@@ -1,0 +1,34 @@
+{
+  "header": {
+    "kernel_version": "0.1.0",
+    "spec_version": "0.1.0",
+    "hash_algorithm": "sha256"
+  },
+  "entry_count": 1,
+  "entries": [
+    {
+      "index": 0,
+      "event_id": "deterministic:0",
+      "event_hash": "4c7df3a23058ddb897268001c7004fa76b6f656ddd93a30e7f8a6f1badbbf633",
+      "previous_hash": null,
+      "event": {
+        "event_id": "deterministic:0",
+        "sequence_index": 0,
+        "timestamp": null,
+        "source": null,
+        "payload": {
+          "filename": "input.json",
+          "hash_sha256": "1d32830278311d3b309cafa66389aa8780e9c0903b0e7f349679e827f385e175",
+          "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\10_DATASETS\\adversarial_reorder\\input.json",
+          "raw_bytes_base64": "Ww0KICB7DQogICAgImlkIjogIkEiLA0KICAgICJ0aW1lc3RhbXAiOiAiMjAyNC0wMS0wMVQwMDowMDowMVoiLA0KICAgICJ2YWx1ZSI6IDEwMA0KICB9LA0KICB7DQogICAgImlkIjogIkIiLA0KICAgICJ0aW1lc3RhbXAiOiAiMjAyNC0wMS0wMVQwMDowMDowMloiLA0KICAgICJ2YWx1ZSI6IDIwMA0KICB9LA0KICB7DQogICAgImlkIjogIkMiLA0KICAgICJ0aW1lc3RhbXAiOiAiMjAyNC0wMS0wMVQwMDowMDowM1oiLA0KICAgICJ2YWx1ZSI6IDMwMA0KICB9DQpdDQo=",
+          "size_bytes": 266,
+          "type": "INGEST_FILE"
+        },
+        "provenance": null,
+        "notes": null
+      },
+      "entry_hash": "6e5b431dab836f44e4d77689d86103b9e80bf3ccf7f19bbc7e091863e2b50680"
+    }
+  ],
+  "ledger_hash": "1898ae7fc9758490c51f16d970b9d51fffc7f9a53c88af42ff66492f122065e1"
+}

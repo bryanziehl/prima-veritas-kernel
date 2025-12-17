@@ -1,0 +1,34 @@
+{
+  "header": {
+    "kernel_version": "0.1.0",
+    "spec_version": "0.1.0",
+    "hash_algorithm": "sha256"
+  },
+  "entry_count": 1,
+  "entries": [
+    {
+      "index": 0,
+      "event_id": "deterministic:0",
+      "event_hash": "95c4f9cff36f052e26a95788e64c11bddffbf36524821bd3378dfe68aee52826",
+      "previous_hash": null,
+      "event": {
+        "event_id": "deterministic:0",
+        "sequence_index": 0,
+        "timestamp": null,
+        "source": null,
+        "payload": {
+          "filename": "input.json",
+          "hash_sha256": "a1510149369c61874b1e09115d95257392abaa5ff1cb90dec6ad35fa47735b28",
+          "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\10_DATASETS\\structural_mutation\\input.json",
+          "raw_bytes_base64": "ew0KICAicmVjb3JkIjogew0KICAgICJpZCI6ICJBIiwNCiAgICAibWV0cmljcyI6IHsNCiAgICAgICJ2YWx1ZSI6IDEwMCwNCiAgICAgICJ1bml0cyI6ICJ1c2QiDQogICAgfQ0KICB9LA0KICAidGltZXN0YW1wIjogIjIwMjQtMDEtMDFUMDA6MDA6MDFaIg0KfQ0K",
+          "size_bytes": 150,
+          "type": "INGEST_FILE"
+        },
+        "provenance": null,
+        "notes": null
+      },
+      "entry_hash": "882a3273aab4cbfffca2891d1d4392fae95c2fa6bdc6ba471a7e263dbb738c43"
+    }
+  ],
+  "ledger_hash": "bb713d6382c85b87665f52575b66ba7657ee38c17bb3444331e33f3058eca295"
+}

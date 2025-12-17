@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Prima Veritas Atomic Event Schema",
+  "description": "Canonical schema for atomic events produced by the atomization layer. Events represent facts-as-recorded with no interpretation.",
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "event_id",
+    "sequence_index",
+    "source",
+    "payload",
+    "provenance"
+  ],
+
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Deterministic identifier derived from source + sequence_index. No randomness permitted."
+    },
+
+    "sequence_index": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Zero-based deterministic ordering index within the event stream."
+    },
+
+    "timestamp": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Timestamp if explicitly present in input. Null if absent. Never synthesized."
+    },
+
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "origin",
+        "location"
+      ],
+      "properties": {
+        "origin": {
+          "type": "string",
+          "description": "High-level source identifier (e.g. file, directory, system name)."
+        },
+        "location": {
+          "type": "string",
+          "description": "Precise source location (file path, row index, record key, etc.)."
+        }
+      }
+    },
+
+    "payload": {
+      "type": "object",
+      "description": "Normalized data payload carried forward without interpretation."
+    },
+
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ingest_id",
+        "normalize_id"
+      ],
+      "properties": {
+        "ingest_id": {
+          "type": "string",
+          "description": "Deterministic identifier referencing the ingest operation."
+        },
+        "normalize_id": {
+          "type": "string",
+          "description": "Deterministic identifier referencing the normalization operation."
+        }
+      }
+    },
+
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Optional freeform notes explicitly passed through from input. Never inferred."
+    }
+  }
+}

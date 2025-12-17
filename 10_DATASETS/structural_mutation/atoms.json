@@ -1,0 +1,18 @@
+[
+  {
+    "event_id": "deterministic:0",
+    "sequence_index": 0,
+    "timestamp": null,
+    "source": null,
+    "payload": {
+      "filename": "input.json",
+      "hash_sha256": "a1510149369c61874b1e09115d95257392abaa5ff1cb90dec6ad35fa47735b28",
+      "path": "C:\\CAVIRA_TOOLSTACK_MASTER\\PRIMA_VERITAS_KERNEL\\10_DATASETS\\structural_mutation\\input.json",
+      "raw_bytes_base64": "ew0KICAicmVjb3JkIjogew0KICAgICJpZCI6ICJBIiwNCiAgICAibWV0cmljcyI6IHsNCiAgICAgICJ2YWx1ZSI6IDEwMCwNCiAgICAgICJ1bml0cyI6ICJ1c2QiDQogICAgfQ0KICB9LA0KICAidGltZXN0YW1wIjogIjIwMjQtMDEtMDFUMDA6MDA6MDFaIg0KfQ0K",
+      "size_bytes": 150,
+      "type": "INGEST_FILE"
+    },
+    "provenance": null,
+    "notes": null
+  }
+]

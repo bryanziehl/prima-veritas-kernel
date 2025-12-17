@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Prima Veritas Ledger Schema",
+  "description": "Canonical schema for deterministic event ledgers produced by the Prima Veritas Kernel. This schema defines structure only; it encodes no meaning or interpretation.",
+  "type": "object",
+  "required": [
+    "ledger_version",
+    "source_id",
+    "created_at",
+    "event_count",
+    "events",
+    "ledger_hash"
+  ],
+  "properties": {
+    "ledger_version": {
+      "type": "string",
+      "description": "Kernel ledger format version. Changes are breaking."
+    },
+    "source_id": {
+      "type": "string",
+      "description": "Stable identifier for the ingested source material."
+    },
+    "created_at": {
+      "type": "string",
+      "description": "Creation timestamp carried from ingest metadata (not generated here)."
+    },
+    "event_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of events recorded in this ledger."
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "index",
+          "event_id",
+          "event_hash",
+          "payload",
+          "prev_hash"
+        ],
+        "properties": {
+          "index": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Zero-based deterministic ordering index."
+          },
+          "event_id": {
+            "type": "string",
+            "description": "Stable deterministic identifier for this event."
+          },
+          "event_hash": {
+            "type": "string",
+            "description": "SHA-256 hash of this event payload."
+          },
+          "payload": {
+            "type": "object",
+            "description": "Raw atomic event payload. No interpretation applied."
+          },
+          "prev_hash": {
+            "type": ["string", "null"],
+            "description": "Hash of the previous event in the chain, or null for index 0."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "ledger_hash": {
+      "type": "string",
+      "description": "Final SHA-256 hash representing the entire ledger state."
+    }
+  },
+  "additionalProperties": false
+}
