@@ -2,8 +2,8 @@
  * PRIMA VERITAS KERNEL — CLI VERIFY ENTRYPOINT
  *
  * Responsibility:
- * This file provides a deterministic CLI interface for verifying that
- * a provided ledger matches an expected canonical ledger hash.
+ * Deterministically verify that a provided ledger matches
+ * an expected canonical ledger hash.
  *
  * Verification is binary: PASS or FAIL.
  *
@@ -27,7 +27,6 @@
  */
 
 import { replaySequence } from "../05_REPLAY/replay_sequence.mjs";
-import { hashObject } from "../04_LEDGER/hash_utils.mjs";
 import { KernelError } from "../07_ERRORS/kernel_error.mjs";
 import { readFileSync } from "fs";
 
@@ -80,10 +79,24 @@ if (!expectedHashPath) {
     const atoms = JSON.parse(readFileSync(atomsPath, "utf8"));
     const expectedHash = readFileSync(expectedHashPath, "utf8").trim();
 
-    // Canonical verification hash (ledger-centric per KERNEL_CHARTER v1.0.2)
-    const canonicalHash = hashObject(ledger);
+    if (!ledger || typeof ledger !== "object") {
+      throw new KernelError(
+        "LEDGER_INVALID",
+        "VERIFY",
+        "Ledger must be a JSON object."
+      );
+    }
 
-    if (canonicalHash !== expectedHash) {
+    if (!ledger.ledger_hash || typeof ledger.ledger_hash !== "string") {
+      throw new KernelError(
+        "LEDGER_HASH_MISSING",
+        "VERIFY",
+        "Ledger does not contain canonical ledger_hash"
+      );
+    }
+
+    // Canonical verification hash = ledger.ledger_hash (per KERNEL_CHARTER)
+    if (ledger.ledger_hash !== expectedHash) {
       throw new KernelError(
         "VERIFICATION_FAILED",
         "VERIFY",
@@ -91,8 +104,7 @@ if (!expectedHashPath) {
       );
     }
 
-    // Replay executes only as a determinism check.
-    // Replay output is non-authoritative for verification.
+    // Replay is a determinism sanity check only
     await replaySequence({
       ledger,
       atoms,

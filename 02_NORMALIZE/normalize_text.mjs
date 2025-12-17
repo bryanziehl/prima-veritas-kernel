@@ -2,31 +2,32 @@
  * Prima Veritas Kernel — normalize_text.mjs
  *
  * Responsibility
- * ---------------
+ * --------------
  * Apply deterministic, explicit text normalization rules to raw text inputs.
- * This module performs mechanical transforms only, as declared in rules.
+ * This module performs mechanical, rule-declared transforms only.
  *
  * Determinism Guarantees
  * ---------------------
  * - No randomness
  * - No timestamps
- * - No locale, encoding, or environment-dependent behavior
- * - Fixed ordering only
- * - Pure function: input → output
+ * - No locale- or environment-dependent behavior
+ * - Explicit, rule-declared transforms only
+ * - Pure transform: identical input + rules → identical output
  *
- * Non-Goals / Explicit Refusals
+ * Explicit Non-Goals / Refusals
  * ----------------------------
- * - Will not infer language, encoding, or semantics
- * - Will not auto-correct spelling or grammar
- * - Will not guess missing text
- * - Will not trim, pad, or reflow text unless explicitly instructed
- * - Will not collapse whitespace unless rule-declared
+ * - No language, encoding, or semantic inference
+ * - No spelling or grammar correction
+ * - No guessing missing text
+ * - No trimming, padding, or reflow unless explicitly rule-declared
+ * - No whitespace collapse unless explicitly rule-declared
  *
  * Stability Contract
  * ------------------
- * - Output must remain byte-stable for identical input + rules
- * - Any behavior change requires version bump + replay diff
+ * Output must remain byte-stable for identical input and rules.
+ * Any behavior change requires a version bump and replay diff.
  */
+
 
 import fs from "fs";
 import path from "path";

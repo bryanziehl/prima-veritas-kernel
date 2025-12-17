@@ -6,7 +6,7 @@
  * Deterministically ingest a single file as raw bytes and emit a stable
  * ingest artifact describing its contents and structural metadata.
  *
- * This module captures reality; it does not interpret it.
+ * This module captures reality; it does not interpret, repair, or normalize it.
  *
  * Determinism Guarantees
  * ---------------------
@@ -15,10 +15,10 @@
  * - No environment-dependent behavior
  * - No locale-dependent encoding logic
  * - Fixed byte-for-byte reads
- * - Explicit ordering only
+ * - Explicit path resolution only
  *
- * Forbidden Behaviors
- * -------------------
+ * Explicit Non-Goals / Refusals
+ * ----------------------------
  * - No format inference
  * - No schema detection
  * - No content parsing
@@ -91,7 +91,10 @@ export function ingestFile(filePath) {
     .update(buffer)
     .digest("hex");
 
-  // IMPORTANT: No timestamps, no inode numbers, no OS-specific metadata
+  // IMPORTANT:
+  // - No timestamps
+  // - No inode numbers
+  // - No OS-specific metadata
   return {
     type: "INGEST_FILE",
     path: resolvedPath,
@@ -101,9 +104,3 @@ export function ingestFile(filePath) {
     raw_bytes_base64: buffer.toString("base64"),
   };
 }
-
-
-
-
-
-

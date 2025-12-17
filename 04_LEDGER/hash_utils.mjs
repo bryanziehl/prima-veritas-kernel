@@ -1,28 +1,36 @@
 /*
 Prima Veritas Kernel — Hash Utilities
 
-Responsibility:
-Provide deterministic cryptographic hashing primitives used by the kernel.
-Includes canonical, stable serialization required by normalization.
+Responsibility
+--------------
+Provide deterministic cryptographic hashing primitives for the kernel.
+Includes canonical, stable serialization used for hashing only.
 
-Determinism Guarantees:
+Determinism Guarantees
+---------------------
 - No randomness
 - No salts
 - No timestamps
 - Fixed algorithm (SHA-256)
 - Fixed encoding (utf8 → hex)
 - Stable key ordering
-- Same input → same output
+- Identical input → identical hash
 
-Non-Goals / Refusals:
+Non-Goals / Explicit Refusals
+-----------------------------
 - No heuristic normalization
 - No type coercion
 - No environment dependence
+- No interpretation of semantic meaning
+- No schema inference or repair
 
-Stability Contract:
+Stability Contract
+------------------
 - HARD invariant
 - Any change invalidates historical ledgers
+- Behavior changes require version bump + full replay
 */
+
 
 import crypto from "crypto";
 

@@ -2,31 +2,33 @@
  * Prima Veritas Kernel — ingest_manifest.mjs
  *
  * Responsibility
- * ---------------
- * Deterministically assemble a manifest describing WHAT was ingested,
- * not what it means. This file records raw artifact metadata only.
+ * --------------
+ * Deterministically assemble a manifest describing **what was ingested**,
+ * not what it means. This module records raw artifact metadata only.
+ *
+ * The manifest is a structural inventory, not an analysis.
  *
  * Determinism Guarantees
  * ---------------------
  * - No randomness
  * - No timestamps
  * - No environment-dependent behavior
- * - Fixed ordering only
+ * - Fixed, explicit ordering only
  * - Pure data transformation
  *
- * Non-Goals / Explicit Refusals
+ * Explicit Non-Goals / Refusals
  * ----------------------------
- * - Will not hash file contents
- * - Will not inspect or parse bytes
- * - Will not infer file types
- * - Will not guess intent or meaning
- * - Will not silently deduplicate or coerce
+ * - No hashing of file contents
+ * - No inspection or parsing of bytes
+ * - No inference of file types, intent, or meaning
+ * - No silent deduplication, coercion, or normalization
  *
  * Stability Contract
  * ------------------
- * - Output structure is byte-stable
- * - Any behavior change requires version bump + replay diff
+ * Output structure and ordering are byte-stable.
+ * Any behavior change requires a version bump and replay diff.
  */
+
 
 import path from "path";
 

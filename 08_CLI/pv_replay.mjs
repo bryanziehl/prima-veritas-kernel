@@ -2,10 +2,10 @@
  * PRIMA VERITAS KERNEL — CLI REPLAY ENTRYPOINT
  *
  * Responsibility:
- * This file provides a thin, deterministic CLI interface for replaying
+ * Provide a thin, deterministic CLI interface for replaying
  * an existing Prima Veritas ledger and atomized event set.
  *
- * It performs argument validation only and delegates all execution
+ * Performs argument validation only and delegates execution
  * to the replay module.
  *
  * Determinism Guarantees:
@@ -28,11 +28,12 @@
  * - Behavior changes require version bump + replay diff
  */
 
+import fs from "fs";
 import { replaySequence } from "../05_REPLAY/replay_sequence.mjs";
 import { KernelError } from "../07_ERRORS/kernel_error.mjs";
 
-function fail(message, code = "CLI_ARGUMENT_ERROR") {
-  throw new KernelError(code, message);
+function fail(message, code = "CLI_ARGUMENT_ERROR", stage = "REPLAY") {
+  throw new KernelError(code, stage, message);
 }
 
 const args = process.argv.slice(2);
@@ -70,10 +71,16 @@ if (!atomsPath) {
 
 (async () => {
   try {
-    await replaySequence({
-      ledgerPath,
-      atomsPath
+    const ledger = JSON.parse(fs.readFileSync(ledgerPath, "utf8"));
+    const atoms = JSON.parse(fs.readFileSync(atomsPath, "utf8"));
+
+    replaySequence({
+      ledger,
+      atoms,
+      returnFinalHash: false
     });
+
+    console.log("REPLAY VERIFIED");
   } catch (err) {
     if (err instanceof KernelError) {
       console.error(err.format());
@@ -82,9 +89,3 @@ if (!atomsPath) {
     throw err;
   }
 })();
-
-
-
-
-
-

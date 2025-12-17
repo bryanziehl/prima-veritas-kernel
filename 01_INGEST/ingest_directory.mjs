@@ -1,29 +1,36 @@
 /**
  * Prima Veritas Kernel — ingest_directory.mjs
  *
- * Responsibility:
- * Deterministically enumerate files within a directory and emit a canonical,
- * ordered file manifest for downstream ingest. This module does not read file
+ * Responsibility
+ * --------------
+ * Deterministically enumerate filesystem entries within a directory and emit a
+ * canonical, ordered manifest for downstream ingest.
+ *
+ * This module records structure and ordering only. It does not read file
  * contents or interpret file formats.
  *
- * Determinism Guarantees:
+ * Determinism Guarantees
+ * ---------------------
  * - No randomness
  * - No timestamps
- * - No environment-dependent ordering
+ * - No environment-dependent behavior
  * - Fixed, lexicographic ordering only
  * - Explicit rejection of unsupported filesystem states
  *
- * Non-Goals / Refusals:
- * - Will not recurse implicitly unless explicitly instructed
- * - Will not ignore hidden files silently
- * - Will not auto-skip unreadable files
- * - Will not infer file types or intent
+ * Explicit Non-Goals / Refusals
+ * ----------------------------
+ * - No implicit recursion unless explicitly instructed
+ * - No silent ignoring of hidden files
+ * - No auto-skipping unreadable paths
+ * - No inference of file types, intent, or meaning
  *
- * Stability Contract:
- * - Output structure is byte-stable
- * - Any change to ordering, filtering, or emitted fields is breaking
- * - Changes require version bump and replay diff
+ * Stability Contract
+ * ------------------
+ * Output structure and ordering are byte-stable.
+ * Any change to ordering, filtering, recursion semantics, or emitted fields is
+ * a breaking change requiring a version bump and replay diff.
  */
+
 
 import fs from "fs";
 import path from "path";

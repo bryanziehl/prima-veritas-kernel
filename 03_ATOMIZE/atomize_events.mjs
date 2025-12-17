@@ -1,30 +1,41 @@
 /*
-Prima Veritas Kernel — Atomization Module
+Prima Veritas Kernel — atomize_events.mjs
 
-Responsibility:
+Responsibility
+--------------
 Deterministically convert normalized records into atomic events.
-This file performs structural event extraction only.
-It does not infer meaning, causality, intent, or correctness.
 
-Determinism Guarantees:
+This module performs structural event extraction only.
+It records events as-presented without interpretation, inference, or correction.
+
+Determinism Guarantees
+---------------------
 - No randomness
 - No timestamps generated
 - No environment-dependent behavior
 - Fixed ordering only (input order preserved)
+- Pure transformation: input → events
 - Identical input yields identical output
 
-Non-Goals / Refusals:
-- Will not guess missing timestamps
-- Will not reorder records
-- Will not collapse or merge events
-- Will not infer relationships between events
-- Will not repair malformed payloads
+Non-Goals / Explicit Refusals
+----------------------------
+- Will not guess or synthesize timestamps
+- Will not reorder records or events
+- Will not collapse, merge, or summarize events
+- Will not infer relationships, causality, or intent
+- Will not repair, clean, or normalize payload semantics
+- Will not resolve ambiguity present in input
 
-Stability Contract:
-- Any change to event structure is BREAKING
+Stability Contract
+------------------
+- This file is a breaking-change boundary
+- Event structure and field semantics are locked
 - Outputs must remain byte-stable
-- Behavior changes require version bump + replay diff
+- Any behavior change requires:
+  - explicit version bump
+  - replay diff validation
 */
+
 
 import fs from "fs";
 import path from "path";

@@ -2,31 +2,34 @@
  * Prima Veritas Kernel — normalize_structured.mjs
  *
  * Responsibility
- * ---------------
+ * --------------
  * Apply deterministic, rule-declared normalization to structured inputs
- * (objects / arrays) without interpretation or repair.
+ * (objects and arrays) without interpretation, inference, or repair.
+ *
+ * This module performs mechanical structural transforms only.
  *
  * Determinism Guarantees
  * ---------------------
  * - No randomness
  * - No timestamps
- * - No locale / environment-dependent behavior
- * - Stable key ordering (when declared)
- * - Pure transform: input → output
+ * - No environment- or locale-dependent behavior
+ * - Stable key ordering only when explicitly declared
+ * - Pure transform: identical input + rules → identical output
  *
- * Non-Goals / Explicit Refusals
+ * Explicit Non-Goals / Refusals
  * ----------------------------
- * - Will not infer schemas or missing fields
- * - Will not coerce types
- * - Will not fill defaults
- * - Will not reconcile conflicts
- * - Will not reorder arrays unless explicitly declared
+ * - No schema inference or missing-field guessing
+ * - No type coercion
+ * - No default filling
+ * - No conflict reconciliation
+ * - No array reordering unless explicitly declared
  *
  * Stability Contract
  * ------------------
- * - Output must remain byte-stable for identical input + rules
- * - Any behavior change requires version bump + replay diff
+ * Output must remain byte-stable for identical input and rules.
+ * Any behavior change requires a version bump and replay diff.
  */
+
 
 export function normalizeStructured(input, rulesInput) {
   if (typeof rulesInput !== "object" || rulesInput === null) {
