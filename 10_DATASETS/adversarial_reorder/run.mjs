@@ -26,6 +26,7 @@
 
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 
 import { ingestFile } from "../../01_INGEST/ingest_file.mjs";
 import { normalizeStructured } from "../../02_NORMALIZE/normalize_structured.mjs";
@@ -34,7 +35,9 @@ import { buildLedger } from "../../04_LEDGER/build_ledger.mjs";
 import { replaySequence } from "../../05_REPLAY/replay_sequence.mjs";
 
 // Resolve kernel root explicitly (never depend on CWD)
-const KERNEL_ROOT = path.resolve(import.meta.dirname, "..", "..");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const KERNEL_ROOT = path.resolve(__dirname, "..", "..");
 
 const DATASET_DIR = path.join(
   KERNEL_ROOT,
@@ -43,6 +46,7 @@ const DATASET_DIR = path.join(
 );
 
 const INPUT = path.join(DATASET_DIR, "input.json");
+
 const NORMALIZE_RULES = JSON.parse(
   fs.readFileSync(
     path.join(KERNEL_ROOT, "02_NORMALIZE", "normalize_rules.json"),

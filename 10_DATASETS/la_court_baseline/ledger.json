@@ -1,7 +1,7 @@
 {
   "header": {
-    "kernel_version": "0.1.0",
-    "spec_version": "0.1.0",
+    "kernel_version": "1.0.0",
+    "spec_version": "1.0.0",
     "hash_algorithm": "sha256"
   },
   "entry_count": 1131,
@@ -36199,5 +36199,5 @@
       "entry_hash": "69b02fb2ba1a95103b78ee04ae037a1fae43bea6d27e9e0cbc39907b6acb4c9d"
     }
   ],
-  "ledger_hash": "2321ed074c2160011d5605a53d1c6ca92b49ca7ca1723790ac19483926c31bf1"
+  "ledger_hash": "b682fe6bf547bc9fe3748d32cf0ba968afc2ad4fa1425de13fe80f6526f00f99"
 }
