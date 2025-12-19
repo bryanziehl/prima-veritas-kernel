@@ -67,12 +67,18 @@ const atoms = atomizeEvents(sequence);
 // 4. ledger
 const ledger = buildLedger(atoms);
 
-// 5. replay (non-authoritative, determinism check only)
-await replaySequence({
+// 5. replay (non-authoritative)
+const replayOutput = await replaySequence({
   ledger,
   atoms,
-  returnFinalHash: false
+  returnFinalHash: true
 });
+
+// Normalize replay shape so downstream writing NEVER breaks.
+const safeReplay = {
+  events: replayOutput?.replay ?? replayOutput?.events ?? [],
+  finalHash: replayOutput?.finalHash ?? ledger.ledger_hash
+};
 
 // write artifacts
 fs.writeFileSync(
@@ -86,11 +92,17 @@ fs.writeFileSync(
 );
 
 fs.writeFileSync(
+  path.join(DATASET_DIR, "replay.json"),
+  JSON.stringify(safeReplay, null, 2)
+);
+
+fs.writeFileSync(
   path.join(DATASET_DIR, "expected_hash.txt"),
-  ledger.ledger_hash
+  ledger.ledger_hash + "\n"
 );
 
 console.log("DATASET MATERIALIZED:");
 console.log(" - atoms.json");
 console.log(" - ledger.json");
+console.log(" - replay.json");
 console.log(" - expected_hash.txt");

@@ -1,1355 +1,1354 @@
 EVENT:
-  date: 2024-06-25
-  actor: Aurice Veloso
-  action: Request for Dismissal
-  scope: Entire action
-  prejudice: With prejudice
+  action: Issue OSC
+  action: Opposition filed
 
-EVENT:
-  date: 2024-06-25
-  actor: Leo David
-  action: Request for Dismissal
-  scope: Entire action
-  prejudice: With prejudice
-
-EVENT:
-  date: 2024-06-24
-  actor: Aurice Veloso
-  action: Request for Dismissal
-  scope: As to Leo David, XCVI LLC, TriNet HR II, Inc., et al.
-
-EVENT:
-  date: 2024-06-24
-  actor: Leo David
-  action: Request for Dismissal
-  scope: As to Aurice M. Veloso
-
-EVENT:
-  date: 2024-06-07
-  actor: XCVI LLC; Construction For Less, Inc.
-  action: Notice of Settlement
-  scope: Entire case
-
-EVENT:
-  date: 2024-06-07
-  actor: Court
-  action: Minute Order
-  subject: Notice of Settlement of Entire Case
-
-EVENT:
-  date: 2024-06-07
-  actor: Clerk
-  action: Certificate of Mailing
-  subject: Settlement order
-
-EVENT:
-  date: 2024-06-07
-  actor: Court
-  action: Vacate hearing
-  hearing: Final Status Conference
-  original_date: 2024-06-14
-
-EVENT:
-  date: 2024-06-07
-  actor: Court
-  action: Vacate hearing
-  hearing: Jury Trial
-  original_date: 2024-06-24
-
-EVENT:
-  date: 2024-06-07
-  actor: Court
-  action: Vacate hearing
-  hearing: Protective Orders
-  original_date: 2024-06-13
-
-EVENT:
-  date: 2024-06-07
-  actor: Court
-  action: Vacate hearing
-  hearing: Terminating Sanctions
-  original_date: 2024-06-13; 2024-06-27
-
-EVENT:
-  date: 2024-06-07
-  actor: Leo David
-  action: Ex Parte Application
-  relief_requested: Terminating sanctions; Evidentiary sanctions; Monetary sanctions ($5,500)
-  disposition: Taken off calendar
-
-EVENT:
-  date_range: 2024-06-06 to 2024-06-07
-  actor: Leo David; Construction For Less, Inc.; XCVI LLC
-  action: Replies / Declarations / Proofs of Service
-  related_to: Sanctions and discovery motions
-
-EVENT:
-  date: 2024-06-05
   actor: Parties
-  action: Stipulation
-  subject: Judicial Mandatory Settlement Conference
-  order_required: No
 
-EVENT:
+
+  actor: Aurice M. Veloso
+  subject: Motion to Continue Trial Date
   date_range: 2024-06-05 to 2024-06-06
-  actor: Parties
-  action: Proofs of Service / Declarations / Replies
-  related_to: Discovery and sanctions motions
 
-EVENT:
-  date: 2024-05-22
-  actor: Leo David
-  action: Motions to Compel
-  target: Aurice Veloso
-  discovery: Interrogatories; Requests for Admission; Employment-law interrogatories
-
-EVENT:
-  date: 2024-05-22
-  actor: Court
-  action: Grant motions to compel
-  sanctions_awarded: $2,750
-
-EVENT:
-  date: 2024-05-23
-  actor: Aurice Veloso
-  action: Opposition
-  target: Motion for Terminating Sanctions
-
-EVENT:
-  date_range: 2024-05-30 to 2024-06-03
-  actor: Aurice Veloso
-  action: Oppositions
-  target: Motions in Limine Nos. 2–10
-
-EVENT:
-  date: 2024-05-30
-  actor: Court
-  action: Schedule hearings
-  subject: Motions to Compel
-  hearing_date: 2024-06-13
-
-EVENT:
-  date: 2024-05-30
-  actor: Party
-  action: Take hearings off calendar
-  subject: Motions to Compel
-
-EVENT:
-  date: 2024-05-31
-  actor: Court
-  action: Schedule IDC
-  hearing_date: 2024-06-07
-
-EVENT:
-  date: 2024-05-31
-  actor: Party
-  action: Take IDC off calendar
-
-EVENT:
-  date: 2024-06-04
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Motion for Terminating Sanctions
-
-EVENT:
-  date: 2024-06-05
-  actor: Court
-  action: Schedule hearing
-  subject: Terminating Sanctions
-  hearing_date: 2024-06-27
-
-EVENT:
-  date: 2024-05-30
-  actor: Parties
-  action: Stipulation
-  subject: Judicial Mandatory Settlement Conference
-
-EVENT:
-  date: 2024-05-31
-  actor: Court
-  action: Schedule hearing
-  subject: Protective Orders
-
-EVENT:
-  date: 2024-06-05
-  actor: Parties
-  action: Proofs of Service
-  related_to: Procedural cleanup
-
-EVENT:
-  date: 2024-05-22
-  actor: Leo David
-  action: Motions to Compel Deposition
-  target: Aurice Veloso
-
-EVENT:
-  date: 2024-05-22
-  actor: Court
-  action: Grant motion to compel deposition
-
-EVENT:
-  date: 2024-05-22
-  actor: Court
-  action: Schedule hearings
-  subject: Protective Orders
-  hearing_date: 2024-06-13
-
-EVENT:
-  date: 2024-05-22
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Motions in Limine
-  count: 10
-
-EVENT:
-  date: 2024-05-22
-  actor: Court
-  action: Schedule hearing
-  subject: Terminating Sanctions
-  hearing_date: 2024-06-13
-
-EVENT:
-  date: 2024-05-22
-  actor: Court
-  action: Grant multiple motions
-  scope: Discovery enforcement
-
-EVENT:
-  date: 2024-05-22
-  actor: Court
-  action: Continue hearings
-  subject: Protective Orders; Terminating Sanctions
-  from: 2024-06-06
   to: 2024-06-13
-
+  date: 2024-01-26
+actor: Court
 EVENT:
-  date: 2024-05-22
-  actor: Clerk
-  action: Certificate of Mailing
-  subject: Rescheduling orders
-
-EVENT:
-  date_range: 2024-05-21 to 2024-05-22
-  actor: Leo David
-  action: Motion to Compel Deposition
-  method: Ex Parte
-
-EVENT:
-  date: 2024-05-22
-  actor: Court
-  action: Hearing held
-  subject: Motion to Compel Deposition
-  disposition: Granted
-
-EVENT:
-  date: 2024-05-21
-  actor: XCVI LLC
-  action: Omnibus Reply
-  subject: Discovery responses
-
-EVENT:
-  date: 2024-05-21
-  actor: Aurice Veloso
-  action: Opposition
-  target: Ex Parte Application to shorten time for deposition
-
-EVENT:
-  date: 2024-05-20
-  actor: Aurice Veloso
-  action: Oppositions
-  subject: Motions to Compel (ROGs; RFAs; PODs; Employment interrogatories)
-
-EVENT:
-  date: 2024-05-17
-  actor: Court
-  action: Schedule hearings
-  subject: Protective Orders
-  hearing_date: 2024-06-04; 2024-06-05
-
-FLAG:
-  type: REPEATED_HEARING_ENTRIES
-  subject: Protective Orders
-
-FLAG:
-  type: SAME_DAY_EVENT_DENSITY
-  date: 2024-05-22
-
-FLAG:
-  type: HEARING_VACATED_AFTER_SCHEDULING
-  
-  EVENT:
-  date: 2024-05-15
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Ex Parte Application
-  relief_requested: Shorten time for Motions to Compel; Motions for Sanctions; Terminating Sanctions (alternative)
-
-EVENT:
-  date: 2024-05-16
-  actor: Court
-  action: Rule on Ex Parte Application
-  disposition: Motions to Compel / Sanctions GRANTED; Terminating Sanctions DENIED
-  order: Shortening time entered
-
-EVENT:
-  date: 2024-05-16
-  actor: Court
-  action: Schedule hearings
-  subject: Motions to Compel
-  hearing_date: 2024-05-22 09:00
-  location: Beverly Hills Courthouse, Dept. 205
-
-EVENT:
-  date: 2024-05-16
-  actor: Moving party
-  action: Continue hearings
-  from: 2024-06-07
-  to: 2024-05-22
-
-EVENT:
-  date: 2024-05-17
-  actor: Court
-  action: Vacate hearings
-  subject: Protective Orders
-  original_date: 2024-06-04
-
-EVENT:
-  date: 2024-05-15
-  actor: Aurice Veloso
-  action: Opposition
-  target: Ex Parte Application (shortening time; Motions to Compel; Terminating Sanctions)
-
-EVENT:
-  date: 2024-05-14
-  actor: Leo David
-  action: Motions to Compel
-  target: Aurice Veloso
-  discovery: Requests for Production (Set One); Requests for Admission (Set One); Form Interrogatories (General); Form Interrogatories (Employment Law); Special Interrogatories
-  sanctions_requested: $2,750
-
-EVENT:
-  date: 2024-05-14
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Motion for Terminating Sanctions
-
-EVENT:
-  date: 2024-05-15
-  actor: Court
-  action: Schedule hearing
-  subject: Terminating Sanctions
-  hearing_date: 2024-06-06 08:30
-  location: Beverly Hills Courthouse, Dept. 205
-
-EVENT:
-  date: 2024-05-15
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Ex Parte Application
-  relief_requested: Shorten time for Motions to Compel; Motions for Sanctions
-  hearing_date: 2024-05-16 08:30
-
-EVENT:
-  date: 2024-05-10
-  actor: Aurice Veloso
-  action: Motion for Protective Order
-
-EVENT:
-  date: 2024-05-13
-  actor: Court
-  action: Schedule hearings
-  subject: Protective Orders
-  hearing_date: 2024-06-06 08:30
-
-EVENT:
-  date: 2024-05-13
-  actor: Court
-  action: Schedule hearing
-  subject: Motion to Compel Further Discovery Responses
-  hearing_date: 2024-06-13 08:30
-  location: Beverly Hills Courthouse, Dept. 205
-
-EVENT:
-  date_range: 2024-05-08 to 2024-05-10
-  actor: Aurice Veloso
-  action: Motions to Compel Further Discovery Responses
-  discovery: ROGs; Requests for Production; PODs; Form Interrogatories; Employment discovery
-
-EVENT:
-  date: 2024-05-10
-  actor: Aurice Veloso
-  action: Motions for Protective Order
-
-EVENT:
-  date: 2024-05-09
-  actor: Court
-  action: Schedule hearings
-  subject: Motions to Compel (Leo David)
-  hearing_date: 2024-06-07
-
-EVENT:
-  date: 2024-05-09
-  actor: Court
-  action: Schedule hearings
-  subject: Motions to Compel Further Discovery Responses
-  hearing_date: 2024-06-13
-
-FLAG:
-  type: REPEATED_SCHEDULING_ENTRIES
-  subject: Motions to Compel; Protective Orders
-
-EVENT:
-  date: 2024-05-01
-  actor: Court
-  action: Schedule IDC
   time: 10:30
-  location: Dept. 205
 
+  outcomes: Continued; Held
+  actor: Aurice Veloso
+FLAG:
+  date: 2022-11-03
+  disposition: Granted in part
+  subject: Protective Orders
+  action: Continue hearings
+
+  discovery: Interrogatories; Requests for Admission; Employment-law interrogatories
 EVENT:
-  date: 2024-05-03
+  date: 2024-05-15
+EVENT:
+
+target: Ex Parte Application (shortening time; Motions to Compel; Terminating Sanctions)
+EVENT:
+  action: File original complaint
+
+  actor: Leo David
+EVENT:
+  disposition: GRANTED
+  actor: Leo David
+  date: 2023-08-11
   actor: Court
-  action: Continue IDC
-
 EVENT:
-  date: 2024-05-03
-  actor: Court
-  action: Reset Mandatory Settlement Conference
-
-EVENT:
-  date: 2024-04-17
+  type: ANTI_SLAPP_FAILED
+  action: File Motion to Tax Costs
   actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Motion for Sanctions
+  action: Consolidate related cases
+  actor: Court
+
+  hearing: Jury Trial
+  date: 2024-04-17
+EVENT:
+  actor: Aurice Veloso
+EVENT:
+  actor: Aurice M. Veloso
+  actor: Court
+    - Leo David
+
+FLAG:
+  action: File Opposition
+  date: 2024-04-17
+
+  date: 2024-03-04
+  hearing_dates: 2023-09-27; 2023-10-17
+  date: 2024-06-07
   disposition: Granted in part
 
-EVENT:
-  date: 2024-04-18
+  order_required: No
+  action: File replies
+
+  action: Request for Dismissal
+  actor: Court
+  cases:
+    - XCVI, LLC
+
+  actor: Court
+    - AMLease Corporation
   actor: Leo David
-  action: Reply
-  subject: Motion to Strike Cross-Complaint
-
+  actor: Leo David
+  date: 2024-06-07
+  action: Schedule status conference
+  trial_date: 2024-06-24 09:00
+  action: Rule on Motion to Tax Costs
+  scope: Entire action
+    - Demurrer
+  date_range: 2023-10-11 to 2023-10-12
+  action: File replies and declarations
+  subject: Protective Orders
+FLAG:
+  date_range: 2024-05-21 to 2024-05-22
+  action: Grant multiple motions
 EVENT:
-  date: 2024-04-17
-  actor: Court
-  action: Grant motions to compel further discovery responses
-  scope: Partial
-
-EVENT:
-  date: 2024-04-17
-  actor: Court
-  action: Deny motion
-  subject: Motion to Continue Trial Date
-
-EVENT:
-  date: 2024-04-17
-  actor: Court
-  action: Deny motion
-  subject: Motion to Strike (without demurrer)
-
-EVENT:
-  date: 2024-04-17
-  actor: Court
-  action: Hearing held
-  subject: Motion for Sanctions
-  disposition: Taken under submission
-
-EVENT:
-  date: 2024-04-17
-  actor: Court
-  action: Hearing held
-  subject: Motion for Sanctions
-  time: 09:00
-  disposition: Taken under submission
-
-EVENT:
-  date: 2024-04-17
   actor: Court
   action: Issue OSC
-  subject: Sanctions
-  target: Aurice Veloso; Counsel
+  date: 2024-05-09
 
-EVENT:
-  date: 2024-04-17
+  hearing_date: 2023-10-18
   actor: Court
-  action: Vacate OSC
-  subject: Sanctions
 
-EVENT:
-  date: 2024-04-17
-  actor: Court
-  action: Appoint official court reporter
 
-EVENT:
-  date: 2024-04-17
-  actor: Clerk
-  action: Issue certificate of mailing
-
-EVENT:
-  date: 2024-04-17
-  actor: Court
-  action: Hold status conference
-  record: Minute order entered
-
-EVENT:
-  date: 2024-04-12
-  actor: Aurice Veloso
-  action: Opposition filings
-  scope: Motion to Strike Cross-Complaint; Requests for Judicial Notice; Omnibus declarations
-
-EVENT:
+  date: 2024-03-08
   date: 2024-03-21
+
+  type: JURY_TRIAL_SET
   actor: Court
-  action: Issue OSC
-  subject: Sanctions
-  target: Aurice Veloso; Counsel
-  reason: Failure to participate in Joint Status Report
-
-EVENT:
-  date: 2024-03-27
   actor: Court
-  action: Continue OSC
-  subject: Sanctions
-  to: 2024-04-17 09:00
-
 EVENT:
-  date: 2024-03-21
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Motions to Compel Further Discovery Responses
-
+  type: PLAINTIFF_CREDIBILITY_DEGRADATION
+  action: File oppositions
+  date: 2023-02-17
+  date: 2023-08-30
+  scope: As to Aurice M. Veloso
+  date: 2024-06-24
 EVENT:
-  date: 2024-03-22
-  actor: Court
-  action: Schedule hearings
-  subject: Motions to Compel
-  hearing_date: 2024-04-17 08:30
+    - 22SMCV01934
+  action: Stipulation
 
-EVENT:
-  date: 2024-03-27
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Motion to Strike
-  scope: Cross-Complaint
+  action: Request for Dismissal
 
-EVENT:
+
+  date: 2023-09-14
+  actor: Parties
+  action: Certificate of Mailing
+  subject: Motions to Compel (Set One)
+  action: Demurrer and Motion to Strike
   date: 2024-03-29
+  action: File Motions to Compel Further Discovery Responses
+  relief_requested: Terminating sanctions; Evidentiary sanctions; Monetary sanctions ($5,500)
+
+EVENT:
+
+EVENT:
+  date: 2024-02-01
+  original_date: 2024-06-24
   actor: Court
+  date: 2023-11-07
+  action: Rule on Ex Parte Application
+EVENT:
+  actor: Court
+  action: Motion for Sanctions
+EVENT:
+  action: Re-file discovery materials
+  date: 2024-05-23
+EVENT:
+
   action: Schedule hearing
-  subject: Motion to Strike
-  hearing_date: 2024-04-25 08:30
-
 EVENT:
-  date: 2024-03-21
+
+  actor: Aurice Veloso
+  action: Deny motion
+  date_range: 2023-01-18 to 2023-01-19
+EVENT:
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+EVENT:
+  date: 2024-05-10
+
   actor: Court
-  action: Schedule hearing
-  subject: Motion to Continue Trial
-  hearing_date: 2024-04-16 09:00
+EVENT:
+  date: 2023-12-12
+  scope: Motion to Strike Cross-Complaint; Requests for Judicial Notice; Omnibus declarations
+  disposition: Taken under submission
+  target: Motion for Terminating Sanctions
+  actor: Aurice M. Veloso
+  action: File Motions to Compel
+  code: CCP 425.16
+  prejudice: With prejudice
+
+
+FLAG:
 
 EVENT:
-  date: 2024-03-27
+    - 22STCV35085
+  subject: Discovery (all vehicles)
   actor: Court
-  action: Schedule hearing
-  subject: Motion for Sanctions
-  hearing_date: 2024-04-17 09:00
+
+  date: 2024-03-06
+
+  actor: Aurice M. Veloso
+  action: Rule on Motions to Compel
+EVENT:
+
+
+  date: 2023-11-21
+  action: Take motions off calendar
 
 EVENT:
-  date: 2024-03-27
+
+  type: FIRST_DISCOVERY_DENIAL
   actor: Court
-  action: Reschedule hearings
-  scope: Sanctions; Trial-continuance; Status conference
+  action: File declarations and replies
 
+  actor: Court
+  actor: Court
 EVENT:
+  actor: Court
+FLAG:
+  actor: Court
   date: 2024-04-03
+  date: 2023-01-11
+  action: File replies and objections
+  sanctions_amount: $4,785
+  date: 2023-10-18
+  date_range: 2024-06-06 to 2024-06-07
+EVENT:
+  disposition: DENIED
+  subject: Protective Orders
+    - Leo David
+  original_date: 2024-06-13
+FLAG:
+  date_range: 2023-02-06 to 2023-02-10
+  type: REPEATED_SCHEDULING_ENTRIES
+  actor: Leo David
+  action: Schedule hearing
+  date_range: 2023-10-17 to 2023-10-19
+  action: Issue OSC
+EVENT:
+  subject: Motion for Reconsideration
+  date: 2024-03-27
+
+  date: 2024-05-03
+  actor: Leo David
+  action: Schedule and continue hearings
+EVENT:
   actor: Court
-  action: Vacate IDC
+
+  date: 2024-05-22
+EVENT:
+  subject: Motions to Compel
+  action: File Motion for Sanctions
+
+  type: HEARING_VACATED_AFTER_SCHEDULING
+  date: 2024-06-05
+EVENT:
+  actor: Court
+EVENT:
+  action: File oppositions
+  date: 2024-05-31
+  action: Request for Dismissal
+  action: File Request for Dismissal
+  type: REPEATED_HEARING_CONTINUANCES
+  date: 2024-04-17
+  subject: Vacate Trial Setting
+EVENT:
+
+  action: Reset Mandatory Settlement Conference
+  date: 2024-03-13
+  amount: $5,000
+  action: Schedule hearings
+  actor: Leo David
+  scope: Sanctions; Trial-continuance; Status conference; OSC
+  date: 2024-05-31
+EVENT:
+
+  date: 2023-11-20
+
+
+  original_date: 2024-06-04
+  actor: XCVI LLC
+EVENT:
+  action: Grant motion to compel deposition
+  action: Hold IDC
+EVENT:
+
+  actor: Court
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+  actor: Aurice Veloso
+  subject: Motion to Strike Cross-Complaint
+  subject: Terminating Sanctions
+  sanctions_requested: 3600
+  relief_requested: Shorten time for Motions to Compel; Motions for Sanctions
+
+EVENT:
+
+  action: Post jury fees
+  action: Opposition
+
+  action: File IDC request
+
   time: 10:30
+  date: 2024-05-13
+  subject: Motion for Sanctions
 
-EVENT:
-  date: 2024-03-21
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Motion to Compel Further Discovery Responses
-  support: Separate statement; Declaration; Proof of service
+  date: 2024-02-05
 
-EVENT:
-  date: 2024-03-21
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Notice of failure to oppose
-  subject: Motion to vacate or continue trial
+  subject: Complaint
+  actor: Aurice Veloso
+  date: 2024-01-03
 
+  date: 2023-08-01
+  action: Substitution of Attorney filed
 EVENT:
-  date: 2024-03-21
-  actor: Court
-  action: Issue minute order
+
+  prejudice: With prejudice
   scope: Reschedule late-March hearings
 
-EVENT:
-  date: 2024-03-21
-  actor: Court
-  action: Continue hearings
-  scope: Sanctions; Trial-continuance; Status conference; OSC
-  to: 2024-04-16
-
-EVENT:
-  date: 2024-03-20
-  actor: Court
-  action: Rule on motions to quash subpoenas
-  disposition: Granted in part
-  scope: Business records; Medical records
-
-EVENT:
-  date: 2024-03-19
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Reply
-  subject: Motion for Monetary and Terminating Sanctions
-  amount: $5,000
-
-EVENT:
-  date: 2024-03-13
-  actor: Aurice Veloso
-  action: Opposition
-  subject: Motion for Sanctions
-
-EVENT:
-  date: 2024-03-12
-  actor: Aurice Veloso
-  action: Errata
-  subject: Opposition to Motion to Quash Subpoenas
-
-EVENT:
-  date: 2024-03-08
-  actor: Court
-  action: Issue OSC
-  subject: Sanctions
   reason: Failure to participate in Joint Status Report
 
 EVENT:
-  date: 2024-03-08
-  actor: Court
-  action: Schedule IDC
-  hearing_date: 2024-04-03 10:30
-
+  action: Opposition
+  actor: XCVI LLC; Construction For Less, Inc.
 EVENT:
-  date: 2024-03-08
-  actor: Court
+  date: 2024-02-01
+  matters:
   action: Hold status conference
-  continued_to: 2024-03-28
+  date: 2023-08-02
+  action: Certificate of Mailing
 
-EVENT:
-  date: 2024-03-07
-  actor: Parties
-  action: File Joint Status Conference Report
 
-EVENT:
-  date: 2024-03-06
-  actor: Leo David
-  action: File status report
-
-EVENT:
-  date: 2024-03-04
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Motion to Continue Trial Date
-
-EVENT:
-  date: 2024-03-04
-  actor: Court
-  action: Schedule hearing
-  subject: Motion to Continue Trial
-  hearing_date: 2024-03-28 08:30
-
-EVENT:
-  date: 2024-03-04
-  actor: Court
-  action: Schedule hearing
-  subject: Motion for Sanctions
-  hearing_date: 2024-03-26 08:30
-
-EVENT:
-  date: 2024-02-29
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Ex Parte Application
-  subject: Vacate Trial Setting
-  disposition: DENIED
-
-EVENT:
-  date: 2024-02-29
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Motion for Sanctions
-  scope: Monetary; Terminating
-
-EVENT:
-  date: 2024-02-28
-  actor: Aurice Veloso
-  action: Opposition
-  subject: Ex Parte re Vacating Trial
-
-EVENT:
-  date: 2024-02-25
-  actor: Court
-  action: Schedule hearings
-  subject: Motions to Quash Subpoenas
-  hearing_date: 2024-03-20
-
-EVENT:
-  date: 2024-02-22
-  actor: Leo David
-  action: Motion to Quash Subpoenas
-  scope: Business records; Medical records
-
-EVENT:
-  date: 2024-02-05
-  actor: XCVI LLC; Construction For Less, Inc.
-  action: Substitution of Attorney filed
-
-EVENT:
-  date: 2024-02-05
-  actor: Leo David
-  action: Substitution of Attorney filed
-
-EVENT:
-  date: 2024-01-12
-  actor: Court
-  action: Grant Motion to Consolidate
-  scope: Cases 22SMCV01934; 22STCV35085
-  lead_case: 22SMCV01934
-
-EVENT:
-  date: 2024-01-12
-  actor: Court
+  location: Beverly Hills Courthouse, Dept. 205
   action: Enter minute order
-  subject: Consolidation
-
 EVENT:
-  date: 2023-12-12
-  actor: Court
-  action: Issue OSC
-  subject: Discovery Referee
-
-EVENT:
-  date: 2023-12-12
-  actor: Court
-  action: Hold IDC
-  disposition: Taken under submission
-
-EVENT:
-  date: 2024-01-09
-  actor: Court
-  action: Continue OSC
-  subject: Discovery Referee
-
-EVENT:
-  date: 2024-01-12
-  actor: Court
-  action: Resolve OSC
-  subject: Discovery Referee
-  disposition: No referee appointed
-
-EVENT:
-  date: 2023-12-05
   actor: Leo David
+  action: Continue hearings
+EVENT:
+  date: 2024-04-12
+  actor: Court
+
+FLAG:
+FLAG:
   action: File IDC request
-
-EVENT:
-  date: 2023-12-07
-  actor: Parties
-  action: File Joint Status Conference Report
-
-EVENT:
-  date: 2023-12-12
-  actor: Court
-  action: Hold IDC
-
-EVENT:
-  date: 2024-01-03
-  actor: Parties
-  action: File Joint Status Conference Report
-
-EVENT:
-  date: 2024-01-09
-  actor: Court
-  action: Schedule status conference
-
-EVENT:
-  date: 2024-01-26
-  actor: Aurice Veloso
-  action: File Cross-Complaint
-  targets: Leo David; XCVI LLC; Construction For Less, Inc.
-
-EVENT:
-  date: 2024-01-26
-  actor: Aurice Veloso
-  action: File Answer
-  subject: Cross-Complaint
-
-EVENT:
-  date: 2024-02-01
-  actor: Parties
-  action: File Stipulation re Continuance
-  scope: Status Conference; IDC
-
-EVENT:
-  date: 2024-02-01
-  actor: Court
-  action: Continue Status Conference
-  to: 2024-03-08
-
-EVENT:
-  date: 2024-02-01
-  actor: Court
-  action: Continue IDC
-  to: 2024-03-08
-
-EVENT:
-  date: 2023-11-29
-  actor: XCVI LLC; Construction For Less, Inc.
-  action: Substitution of Attorney filed
-
-EVENT:
-  date: 2023-11-29
+  action: Deny motion
   actor: Leo David
-  action: Motion for Reconsideration filed
-
-EVENT:
-  date: 2023-11-29
   actor: Court
-  action: Hold hearing
-  subject: Motion for Reconsideration
-  disposition: DENIED
 
-EVENT:
-  date: 2023-11-15
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: Demurrer and Motion to Strike
-  disposition: Granted in part
-
-EVENT:
-  date: 2023-11-21
-  actor: Court
-  action: Rule on updated demurrer
-  disposition: Sustained in part
-
-EVENT:
-  date: 2023-10-27
-  actor: Leo David
-  action: Motion for Reconsideration filed
-
-EVENT:
-  date: 2023-11-14
-  actor: Aurice Veloso
-  action: Opposition filed
-  subject: Motion for Reconsideration
-
-EVENT:
-  date: 2023-11-20
-  actor: Leo David
-  action: Reply filed
-  subject: Motion for Reconsideration
-
-EVENT:
-  date: 2023-10-26
-  actor: Court
-  action: Hold hearing
+  action: Issue OSC
   subject: Motion to Compel Further Discovery Responses
-  disposition: DENIED
-
-EVENT:
-  date: 2023-10-26
   actor: Court
-  action: Schedule IDC
-  hearing_date: 2023-11-17
 
-EVENT:
-  date: 2023-11-17
   actor: Court
-  action: Hold IDC
-  continued_to: 2023-12-12
-
 EVENT:
-  date: 2023-11-07
-  actor: Court
-  action: Take motions off calendar
-  subject: Motions to Compel Further Discovery Responses
-
-EVENT:
-  date: 2023-11-02
-  actor: Court
-  action: Hold Status Conference
-  continued_to: 2024-02-02
-
-EVENT:
-  date: 2023-11-02
-  actor: Court
-  action: Appoint court reporter
-  name: Lisa Marie-Parker
-  csr: 13441
-
-EVENT:
-  date: 2023-11-27
+  actor: Clerk
   actor: Leo David
-  action: File Answer
-  subject: Complaint
-
-EVENT:
-  date: 2023-10-18
-  actor: Court
-  action: Issue OSC
+  actor: XCVI LLC; Construction For Less, Inc.
+  target: Motions in Limine Nos. 2–10
   subject: Sanctions
-  reason: Failure to participate in Joint Status Report
 
 EVENT:
-  date: 2023-10-26
+  type: POST_DENIAL_REFILING
+  subject: Protective Orders
+
   actor: Court
-  action: Deny Motion to Compel Further Discovery Responses
-
-EVENT:
-  date: 2023-10-13
-  actor: Aurice Veloso
-  action: File oppositions
-  subject: Motions to Compel (Set One)
-
-EVENT:
-  date_range: 2023-10-17 to 2023-10-19
-  actor: Leo David
-  action: File replies and declarations
-  subject: Motions to Compel
-
-EVENT:
-  date: 2023-10-18
-  actor: Court
-  action: Issue OSC
-  subject: Sanctions
-  target: Plaintiff
-
-EVENT:
-  date: 2023-10-26
-  actor: Court
-  action: Rule on Motions to Compel
-  disposition: DENIED IN FULL
-
 FLAG:
-  type: FIRST_DISCOVERY_DENIAL
-
-EVENT:
-  date: 2023-10-03
-  actor: Leo David
-  action: File Motions to Compel Further Discovery Responses
-  discovery: Form Interrogatories; Special Interrogatories; Requests for Admission; Requests for Production
-
-EVENT:
-  date: 2023-10-03
-  actor: Leo David
-  action: File supporting declarations
-  declarants: Yael Tobi; Kacey R. Riccomini
-
-EVENT:
-  date_range: 2023-10-04 to 2023-11-30
-  actor: Court
-  action: Schedule and continue hearings
-  subject: Motions to Compel
-
-FLAG:
-  type: REPEATED_HEARING_CONTINUANCES
-
-EVENT:
-  date_range: 2023-10-11 to 2023-10-12
-  actor: Aurice Veloso
-  action: File oppositions
-  subject: Motions to Compel (Interrogatories)
-
-EVENT:
-  date: 2023-10-11
-  actor: Leo David; XCVI LLC
-  action: File Demurrer and Motion to Strike
-
-EVENT:
-  date: 2023-10-13
+  basis: Jurisdiction / service challenge
+  date: 2023-09-11
+  defendants:
+  date: 2024-05-14
+  date_range: 2024-05-30 to 2024-06-03
   actor: Court
   action: Reset hearing dates
+  date: 2024-04-17
+EVENT:
+  actor: Court
+  action: Motion to Compel Further Discovery Responses
+EVENT:
+EVENT:
   subject: Motions to Compel
-  new_date: 2023-10-26
-
-EVENT:
-  date: 2023-09-27
-  actor: Court
-  action: Rule on Motions to Compel Further Discovery Responses
-  disposition: DENIED
-
-EVENT:
-  date: 2023-09-27
-  actor: Court
-  action: Rule on Motion for Protective Order
-  disposition: DENIED
-
-FLAG:
-  type: DISCOVERY_DENIAL_WALL
-
-EVENT:
-  date_range: 2023-09-19 to 2023-09-21
   actor: Leo David
-  action: File replies and objections
-  subject: Motions to Compel
-  sanctions_amount: $4,785
-
+    - Alon Zeltzer
 EVENT:
-  date_range: 2023-09-19 to 2023-09-20
+  target: Aurice Veloso
+  action: Oppositions
+  action: Proofs of Service
+  date: 2024-01-26
   actor: Parties
-  action: File declarations and replies
-  subject: Discovery motions
-
-EVENT:
-  date: 2023-09-14
-  actor: Court
-  action: Schedule Status Conference
-  hearing_date: 2023-10-18
-
-EVENT:
-  date: 2023-10-03
-  actor: Leo David
-  action: Re-file discovery materials
+  date: 2024-03-04
   subject: Motions to Compel
-
-FLAG:
-  type: POST_DENIAL_REFILING
-
-EVENT:
-  date: 2023-09-14
+  scope:
   actor: Court
-  action: Issue OSC
-  subject: Sanctions
-  target: Plaintiff
-  hearing_date: 2023-10-18
-
-EVENT:
-  date: 2023-09-14
   actor: Court
-  action: Continue Status Conference
-  to: 2023-10-18
-
-EVENT:
-  date: 2023-09-13
   actor: Aurice Veloso
-  action: File oppositions
-  subject: Discovery (all vehicles)
+  hearing_date: 2023-03-16 08:30
 
-EVENT:
-  date: 2023-09-12
   actor: Leo David
-  action: Seek monetary sanctions
-  amount: $4,865
-
+  date: 2023-09-14
+  date: 2024-01-09
+  action: Vacate hearing
+  actor: Party
 EVENT:
-  date: 2023-09-12
   actor: Court
-  action: Hold IDC
-
 EVENT:
-  date: 2023-09-11
-  actor: Leo David
-  action: Ex Parte Application
-  subject: Pro Hac Vice
-  disposition: DENIED
+  date: 2024-05-22
 
-EVENT:
-  date: 2023-09-11
-  actor: Leo David
-  action: Association of Attorney filed
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+  date: 2023-12-07
+  subject: Motion for Reconsideration
+  date: 2024-01-12
 
-FLAG:
-  type: PLAINTIFF_CREDIBILITY_DEGRADATION
 
-EVENT:
-  date: 2023-08-18
-  actor: Leo David
-  action: File Motions to Compel Further Discovery Responses
-  target: Aurice M. Veloso
-  discovery: Multiple vehicles
-  declarations: Kacey R. Riccomini; Yael Tobi
-
-EVENT:
-  date_range: 2023-08-21 to 2023-08-22
+  action: File status report
+  date: 2023-12-12
+  continued_to: 2024-03-28
+  action: File Motion to Quash Service
+  original_date: 2024-06-14
   actor: Court
+  date: 2024-01-09
+  actor: Court
+
+EVENT:
+  subject: Motions to Compel
+  action: Set Jury Trial
   action: Schedule hearings
-  subject: Motions to Compel
-  hearing_dates: 2023-09-27; 2023-10-17
-
-FLAG:
-  type: REPEATED_HEARING_RESCHEDULING
-
+  date: 2024-04-17
+  to: 2024-05-22
 EVENT:
-  date: 2023-08-24
-  actor: Court
-  action: Rule on Motion for Sanctions
-  filed_by: Leo David
-  disposition: GRANTED
+  actor: Leo David
+  date: 2024-04-17
+  date: 2024-01-12
+  action: Proofs of Service / Declarations / Replies
 
-FLAG:
-  type: EARLY_SANCTIONS_GRANTED
-
-EVENT:
-  date: 2023-08-30
+  hearing_date: 2024-06-07
+  action: Motions for Protective Order
   actor: Aurice Veloso
-  action: File Motion for Protective Order
-  hearing_date: 2023-09-25
-
-EVENT:
-  date: 2023-09-05
-  actor: Leo David
-  action: File IDC request
-
-EVENT:
-  date: 2023-09-08
-  actor: Court
-  action: Schedule ex parte hearing
-  subject: Shortening time; Pro Hac Vice
-  hearing_date: 2023-09-11
-
-EVENT:
-  date: 2023-08-01
-  actor: Leo David
-  action: File Motion for Sanctions
-  statutes: CCP 128(a)(4); 177.5
-
-EVENT:
-  date: 2023-08-02
-  actor: Court
-  action: Schedule hearing
-  subject: Motion for Sanctions
-  hearing_date: 2023-08-24 08:30
-
-EVENT:
-  date: 2023-08-11
-  actor: Court
-  action: Issue Writ of Execution
-  creditor: Leo David
-  debtor: Aurice M. Veloso
-  amounts:
-    principal: 4000.00
-    interest: 162.19
-    costs: 40.00
-
-FLAG:
-  type: JUDGMENT_ENFORCEMENT_ACTIVE
-
-EVENT:
-  date: 2023-08-11
   actor: Aurice M. Veloso
-  action: File Opposition
-  subject: Motion for Sanctions
+  actor: Court
+  EVENT:
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+  date: 2024-06-07
+
+    - Leo David
+EVENT:
+EVENT:
+  action: Reply filed
+EVENT:
+  actor: Court
+  subject: Sanctions
+  action: Resolve OSC
+    - Construction For Less, Inc.
+EVENT:
+
+  date: 2024-05-14
+EVENT:
+  action: Request for Dismissal
+  actor: Court
+  subject: Sanctions
+  date: 2023-05-23
+  actor: Leo David
+
 
 EVENT:
-  date: 2023-08-17
+  subject: Consolidation
+  support: Separate statement; Declaration; Proof of service
   actor: Leo David
-  action: File Reply
-  subject: Motion for Sanctions
+EVENT:
+EVENT:
+  actor: Aurice Veloso
+  action: Take IDC off calendar
+  date: 2023-11-29
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+  date: 2024-05-21
+
+  action: Continue OSC
+  action: Vacate OSC
+    - Svetlana Sirot / Savignon
+EVENT:
+  date: 2024-03-12
+  hearing: Final Status Conference
+  creditor: Leo David
+  record: Minute order entered
+  hearing_date: 2024-05-16 08:30
+  discovery: Requests for Production (Set One); Requests for Admission (Set One); Form Interrogatories (General); Form Interrogatories (Employment Law); Special Interrogatories
+    costs: 40.00
+  action: Opposition filings
+
+  action: Rule on updated demurrer
+EVENT:
+
+  date: 2024-05-15
+EVENT:
+  actor: Court
+EVENT:
+
+  action: Continue Status Conference
+  action: Schedule hearing
+    principal: 4000.00
+  action: File dismissals and party corrections
+  date: 2023-05-02
+  lead_case: 22SMCV01934
+EVENT:
+  csr: 13441
+
+  date_range: 2023-03-15 to 2023-05-18
+  actor: Court
 
 EVENT:
-  date: 2023-08-14
-  actor: Leo David
-  action: File Demurrer and Motion to Strike
-  code: CCP 430.10
+EVENT:
+
+  actor: Court
+  action: Reply
+    - Anti-SLAPP
+  date: 2023-08-24
+EVENT:
+
+EVENT:
+EVENT:
+  action: Association of Attorney filed
+  target: Ex Parte Application to shorten time for deposition
+  disposition: No referee appointed
+  subject: Motions to Compel Further Discovery Responses
+  name: Lisa Marie-Parker
+  date: 2023-10-13
+
+EVENT:
+
+
+
+  subject: Discovery Referee
+FLAG:
+  scope: Business records; Medical records
+  debtor: Aurice M. Veloso
+
+  action: Conduct Case Management Conferences
+  scope: Status Conference; IDC
+EVENT:
+  actor: Court
 
 EVENT:
   date: 2023-06-27
-  actor: Leo David
-  action: File Opposition
-  subject: Defendant Motion to Compel
-  sanctions_requested: 3600
+    - Motion to Strike
 
-EVENT:
-  date: 2023-03-16
-  actor: XCVI LLC; Construction For Less, Inc.
-  action: Demurrer and Motion to Strike
-  disposition: DENIED
+  hearing: Protective Orders
 
+
+  reason: Failure to participate in Joint Status Report
 EVENT:
-  date: 2023-03-16
+  subject: Motions to Compel
+  action: Issue OSC
+  actor: Aurice M. Veloso
+
   actor: Court
+EVENT:
+
+  actor: Court
+  hearing_date: 2024-06-06 08:30
+  action: Schedule hearing
+  subject: Motion to vacate or continue trial
+    - Alon Zeltzer
   action: Rule on Anti-SLAPP Motion
+  actor: Leo David
+  actor: Aurice M. Veloso
+
+  subject: Sanctions
+    - Svetlana Sirot / Lana Savignon
+  actor: Leo David
+  action: Motion for Terminating Sanctions
+  lead_case: 22SMCV01934
+  type: CASE_CONSOLIDATED
+  date: 2023-05-18
+  action: Schedule hearing
+  action: File oppositions
+
+  date: 2024-03-08
+  actor: Court
+  location: Beverly Hills Courthouse, Dept. 205
+  subject: Motions to Compel
+EVENT:
+  hearing_date: 2024-04-25 08:30
+  subject: Rescheduling orders
+
+EVENT:
+  action: Hold hearing
+
+EVENT:
+  date: 2024-05-22
+
+EVENT:
+EVENT:
+  date: 2024-03-21
+  action: File Motions to Compel Further Discovery Responses
+  action: Motion for Protective Order
+  date: 2024-03-27
+  date: 2023-10-26
+  target: Plaintiff
+
+  date: 2024-02-25
+  time: 09:00
+  action: Errata
+  department: 200
+  scope: Partial
+  actor: Court
+
+EVENT:
+  hearing_date: 2024-06-13
+  action: File Joint Status Conference Report
+  action: Replies / Declarations / Proofs of Service
+  original_date: 2024-06-13; 2024-06-27
+  continued_to: 2024-02-02
+  actor: Leo David
+  actor: Court
+  actor: Court
+  date: 2023-02-15
+EVENT:
+  hearing_date: 2024-04-17 09:00
+  action: Vacate hearing
+  hearing_date: 2024-06-13
+  date: 2024-06-05
+EVENT:
+  subject: Motion to Continue Trial
+EVENT:
+EVENT:
+  actor: Court
+  date: 2024-05-22
+  subject: Sanctions
+EVENT:
+EVENT:
+
+EVENT:
+  relief_requested: Shorten time for Motions to Compel; Motions for Sanctions; Terminating Sanctions (alternative)
+  actor: Court
+EVENT:
+EVENT:
+  action: Schedule hearing
+  subject: Motion for Reconsideration
+EVENT:
+  action: Opposition
+  action: Hold status conference
+EVENT:
+  subject: Motions to Compel (Interrogatories)
+  date: 2023-11-15
+FLAG:
+  date: 2024-05-22
+  location: Dept. 205
+  hearing_date: 2024-06-13
+  continued_to: 2023-12-12
+  date: 2024-05-16
+  date: 2024-02-22
+EVENT:
+  action: Issue OSC
+
+EVENT:
+  disposition: DENIED
+  target: Plaintiff
+  type: CROSS_COMPLAINT_IGNITION
+  actor: Court
+FLAG:
+
+  date: 2024-05-22
+  actor: Aurice M. Veloso
+  date: 2023-10-03
+  disposition: Sustained in part
+  action: Issue Writ of Execution
+  action: Hold IDC
+  to: 2024-04-17 09:00
+  action: Issue certificate of mailing
+  date: 2024-05-16
+FLAG:
+  actor: Parties
+EVENT:
+
+
+EVENT:
+
+  subject: Terminating Sanctions
+  disposition: Taken under submission
+  date: 2024-03-27
+  action: Rule on Motions to Compel Further Discovery Responses
+  actor: Clerk
+  actor: Leo David
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+  date: 2024-02-01
+EVENT:
+  action: Hold IDC
+EVENT:
+  action: File Answer
+
+  filed_by: Leo David
+  date_range: 2024-05-08 to 2024-05-10
+  date: 2023-12-05
+  date: 2024-05-17
+  date: 2024-03-04
+  action: Continue OSC
+  subject: Motions to Compel; Protective Orders
+  type: JUDGMENT_ENFORCEMENT_ACTIVE
+  subjects:
+  action: Schedule IDC
+
+  date: 2024-05-31
+  subject: Motion for Sanctions
+  type: SANCTIONS_ESCALATION_PRE_HEARING
+  hearing_date: 2024-06-27
+  actor: Court
+
+  subject: Protective Orders
+
+EVENT:
+  action: Demurrer and Motion to Strike
+
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+
+  hearing_date: 2024-06-04; 2024-06-05
+  actor: Court
+EVENT:
+  date: 2024-05-15
+  target: Aurice M. Veloso
+  date: 2024-04-17
+EVENT:
+
+
+  actor: Aurice Veloso
+  date: 2023-12-12
+  target: Aurice Veloso; Counsel
+  date: 2023-10-03
+
+EVENT:
+  action: Schedule hearing
+  actor: XCVI LLC; Construction For Less, Inc.
+  action: File supporting declarations
+
+FLAG:
+  scope: Monetary; Terminating
+EVENT:
+  action: Rule on Motion for Sanctions
+  action: Take hearings off calendar
+  subject: Motions to Compel (Leo David)
+  action: Motion to Quash Subpoenas
+FLAG:
+
+  action: Hearing held
+EVENT:
+  actor: Court
+  scope: Cases 22SMCV01934; 22STCV35085
+FLAG:
+  date: 2024-03-07
+  actor: Court
+EVENT:
+  subject: Motion to Strike
+  date: 2024-03-21
+  disposition: Taken under submission
+
+EVENT:
+
+EVENT:
+  actor: Aurice Veloso
+  disposition: Granted
+  actor: Court
+
+  subject: Notice of Settlement of Entire Case
+  actor: Court
+  subject: Pro Hac Vice
+  action: Motion to Strike
+EVENT:
+
+
+  target: Aurice Veloso
+  actor: Court
+  discovery: Form Interrogatories; Special Interrogatories; Requests for Admission; Requests for Production
+EVENT:
+EVENT:
+  actor: Leo David
+  action: Rule on motions to quash subpoenas
+  action: Vacate IDC
+  date: 2024-06-25
+  actor: Clerk
+  to: 2024-03-08
+  subject: Motion for Monetary and Terminating Sanctions
+  actor: Aurice Veloso
+  action: Motion to Continue Trial Date
+  date_range: 2022-11-03 to 2022-11-18
+  actor: Court
+  date: 2023-10-26
+  date: 2023-02-15
+EVENT:
+  type: REPEATED_HEARING_ENTRIES
+  action: Schedule IDC
+  actor: Leo David
+
+
+  action: Reschedule hearings
+EVENT:
+EVENT:
+EVENT:
+  actor: Court
+
+  actor: Aurice Veloso
+  actor: Aurice Veloso
+
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+
+  subject: Settlement order
+  defendants:
+
+  targets: Leo David; XCVI LLC; Construction For Less, Inc.
+    - Construction For Less, Inc.
+  subject: Motion to Strike (without demurrer)
+
+  subject: Motion to Compel Further Discovery Responses
+  type: DISCOVERY_DENIAL_WALL
+  action: File Demurrer and Motion to Strike
+  date: 2024-05-30
+  actor: Court
+  method: Ex Parte
+  action: Reply
+  actor: Court
+  fsc_date: 2024-06-14 09:00
+  actor: Leo David
+  amount: $4,865
+EVENT:
+  reason: Failure to participate in Joint Status Report
+EVENT:
+  action: File Cross-Complaint
+    - XCVI, LLC
+  action: Motion for Reconsideration filed
+  date: 2024-03-21
+EVENT:
+    - Demurrer
+EVENT:
+  subject: Defendant Motion to Compel
+  date: 2024-05-09
+EVENT:
+  actor: Parties
+EVENT:
+
+  action: Schedule ex parte hearing
+  action: Issue minute order
+  actor: Court
+  action: Seek monetary sanctions
+EVENT:
+  actor: Leo David
+FLAG:
+  actor: Court
+
+
+  from: 2024-06-07
+  order: Shortening time entered
+
+  disposition: DENIED
+  date: 2023-10-18
+  date: 2023-10-03
+  subject: Motions to Compel (ROGs; RFAs; PODs; Employment interrogatories)
+EVENT:
+
+EVENT:
+  subject: Ex Parte re Vacating Trial
+EVENT:
+
+  action: Demurrer and Motion to Strike
+
+  action: Schedule hearings
+  actor: Court
+  date_range: 2023-10-04 to 2023-11-30
+  date: 2024-01-12
+  action: Ex Parte Application
+    - TriNet HR II, Inc.
+  subject: Judicial Mandatory Settlement Conference
+  sanctions_requested: $2,750
+  action: Continue IDC
+EVENT:
+
+
+EVENT:
+EVENT:
+  action: Omnibus Reply
+
+  actor: Leo David
+  action: Grant Motion to Consolidate
+  date: 2023-09-08
+
+  actor: Court
+  date: 2024-06-25
+EVENT:
+
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+
+
+  hearing_date: 2024-04-03 10:30
+  action: File Special Motion to Strike (Anti-SLAPP)
+  action: Motions in Limine
+
+  date: 2022-10-19
+EVENT:
+
+  action: Motions to Compel
+  date: 2024-02-29
+  subject: Terminating Sanctions
+  subject: Motion to Compel Deposition
+  action: Rule on Motion for Protective Order
+  actor: Court
+EVENT:
+
+EVENT:
+
+  actor: Leo David
+  date: 2023-03-16
+  actor: Aurice M. Veloso
+
+
+  actor: Court
+  actor: Court
+  action: File Stipulation re Continuance
+EVENT:
+  actor: Court
+    interest: 162.19
+  action: Continue IDC
+
+  action: Motions to Compel Further Discovery Responses
+
+    - Anti-SLAPP (CCP 425.16)
+  action: Motion to Compel Deposition
+
+  subject: Motion for Sanctions
+  date: 2023-09-05
+  action: Schedule hearing
+  type: CONSOLIDATED_INFLECTION_HEARING
+  date: 2024-06-07
+EVENT:
+EVENT:
+  action: Grant motions to compel further discovery responses
+  subject: Discovery Referee
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+EVENT:
+  date: 2022-10-21
+EVENT:
+EVENT:
+  date: 2024-06-07
+  actor: Aurice Veloso
+
+  date: 2022-12-30
+  actor: XCVI LLC; Construction For Less, Inc.
+  action: Hold hearing
+  actor: Aurice Veloso
+  date_range: 2023-09-19 to 2023-09-20
+  actor: Court
+  date: 2024-05-22
+
+  actor: Court
+
+  target: Aurice Veloso; Counsel
+  date: 2024-02-28
+  declarants: Yael Tobi; Kacey R. Riccomini
+
+  hearing_date: 2023-08-24 08:30
+  date: 2023-08-18
+  subject: Motion for Sanctions
+  action: Notice of failure to oppose
+
+
+  cmc_date: 2023-04-17 08:30
+  action: Hearing held
+  date: 2024-03-19
+
+  actor: Court
+EVENT:
+  subject: Sanctions
+EVENT:
+  action: File Reply
+
+EVENT:
+  actor: Aurice Veloso
+
+  date: 2024-04-17
+
+  date: 2023-09-11
+  related_to: Procedural cleanup
+  action: Schedule IDC
+  actor: Moving party
+  actor: Court
+  target: Aurice M. Veloso
+EVENT:
+  action: Minute Order
+  date: 2024-05-22
+  actor: Court
+
+  action: File Cross-Complaint
+  actor: Court
+
   disposition: DENIED
 
-FLAG:
-  type: ANTI_SLAPP_FAILED
 
-EVENT:
-  date_range: 2023-03-15 to 2023-05-18
-  actor: Court
-  action: Conduct Case Management Conferences
-  outcomes: Continued; Held
-
-EVENT:
-  date: 2023-04-12
-  actor: Aurice M. Veloso
-  action: File Motions to Compel
-  hearing_date: 2023-04-27
-
-EVENT:
+  action: Schedule hearings
+  hearing_date: 2024-03-20
+  subject: Discovery responses
+  action: File Motions to Compel Further Discovery Responses
+  date: 2024-04-17
   date: 2023-04-07
-  actor: Aurice M. Veloso
-  action: File Motion to Tax Costs
 
+  disposition: Motions to Compel / Sanctions GRANTED; Terminating Sanctions DENIED
+
+
+  to: 2024-04-16
+  date: 2024-05-30
 EVENT:
-  date: 2023-05-02
-  actor: Court
-  action: Rule on Motion to Tax Costs
-  disposition: GRANTED IN PART
-
-EVENT:
-  date: 2023-04-28
-  actor: Leo David
-  action: Post jury fees
-
-EVENT:
-  date: 2023-05-18
-  actor: Court
-  action: Set Jury Trial
-  trial_date: 2024-06-24 09:00
-  fsc_date: 2024-06-14 09:00
-
 FLAG:
-  type: JURY_TRIAL_SET
-
+  action: Vacate hearings
+  actor: Parties
+  subject: Protective Orders; Terminating Sanctions
+  subject: Shortening time; Pro Hac Vice
+  declarations: Kacey R. Riccomini; Yael Tobi
+  disposition: GRANTED IN PART
 EVENT:
-  date: 2023-05-23
-  actor: XCVI LLC; Construction For Less, Inc.
-  action: Demurrer and Motion to Strike
-  disposition: Sustained with leave to amend
+  type: LITIGATION_IGNITION
+  scope: As to Leo David, XCVI LLC, TriNet HR II, Inc., et al.
+  date: 2023-11-14
 
+
+  action: Deny Motion to Compel Further Discovery Responses
+  hearing: Terminating Sanctions
+  action: Continue hearings
+  discovery: ROGs; Requests for Production; PODs; Form Interrogatories; Employment discovery
+  scope: Cross-Complaint
 EVENT:
-  date: 2023-02-15
+    - Party name/address corrections
+  action: Hold Status Conference
+EVENT:
+EVENT:
+  actor: Court
+EVENT:
+  sanctions_awarded: $2,750
+  action: Vacate hearing
+  count: 10
+
+  action: Schedule hearing
+
+  actor: Aurice Veloso
+  date: 2024-03-21
+  date_range: 2023-08-21 to 2023-08-22
+  scope: Entire case
+
+  date: 2023-09-14
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+  date: 2024-04-17
+  date: 2023-02-17
+EVENT:
+  date: 2023-09-12
+  parties_affected:
+  date: 2024-06-04
+
+  action: File Joint Status Conference Report
+
+  actor: Leo David; Construction For Less, Inc.; XCVI LLC
+  related_to: Sanctions and discovery motions
+  action: Motions to Compel Further Discovery Responses
+  date: 2024-05-17
+  hearing_date: 2024-06-13
+  type: EARLY_SANCTIONS_GRANTED
+  scope: Sanctions; Trial-continuance; Status conference
+  date: 2024-05-03
+EVENT:
+  subject: Motion for Sanctions
+  subject: Sanctions
+  hearing_date: 2024-04-16 09:00
+  date: 2023-11-02
+  court: Beverly Hills Courthouse
+  date: 2024-05-16
+    - Motion to Strike
+  date: 2024-05-22
+  date: 2024-05-22
+  actor: Aurice Veloso
+  actor: Aurice Veloso
+EVENT:
+
+  date: 2023-11-29
+  disposition: Taken off calendar
+  hearing_date: 2024-03-28 08:30
+EVENT:
+  action: Schedule IDC
+  date: 2023-10-11
+EVENT:
+  subject: Judicial Mandatory Settlement Conference
+  action: File original complaint and effect service
+  hearing_date: 2023-09-25
+EVENT:
+  action: Schedule hearings
+  date: 2024-03-27
+
+  date: 2024-05-30
+  action: Schedule hearing
+  type: ANTI_SLAPP_INITIATED
+EVENT:
+EVENT:
+  action: File Opposition
   actor: Leo David
-  action: File Demurrer; Motion to Strike; Anti-SLAPP
+  targets:
+
+  hearing_date: 2023-09-11
+  hearing_date: 2024-06-06 08:30
+  date: 2024-03-21
+  type: SELECTIVE_CLAIM_NARROWING
+  date: 2023-10-26
+EVENT:
+  date: 2023-11-17
+  actor: Court
+  subject: Cross-Complaint attacks
+FLAG:
+  date: 2024-03-22
+  date: 2024-03-21
+  action: File Motion for Protective Order
+  date: 2023-03-16
+
+
   target: Cross-Complaint
 
 EVENT:
-  date: 2023-03-03
-  actor: Aurice M. Veloso
+
+  actor: Leo David
+  subject: Discovery Referee
+EVENT:
+  disposition: DENIED
+  disposition: Granted in part
+  actor: Court
+EVENT:
+
+  action: Ex Parte Application
+  action: File Joint Status Conference Report
+EVENT:
+  actor: Parties
+  disposition: DENIED IN FULL
   action: File Oppositions
-  subject: Cross-Complaint attacks
+  code: CCP 430.10
+EVENT:
+  from: 2024-06-06
+  date: 2024-05-21
+  action: Ex Parte Application
+  action: Notice of Settlement
+  disposition: DENIED
 
 FLAG:
-  type: EARLY_PROCEDURAL_ESCALATION
-
+  date: 2023-10-26
 EVENT:
-  date: 2023-02-17
-  actor: Aurice M. Veloso
-  action: File Request for Dismissal
-  scope: Portions of Cross-Complaint
-  disposition: Without prejudice
-  parties_affected:
-    - Svetlana Sirot / Lana Savignon
+  action: Opposition
+
+  defendants:
+  to: 2023-10-18
+EVENT:
+  action: Schedule hearings
+
+  subject: Motion to Continue Trial
     - Leo David
-    - Alon Zeltzer
+  date: 2024-03-20
+  action: Vacate hearing
+EVENT:
+  hearing_date: 2024-06-13 08:30
+  actor: Court
 
-FLAG:
-  type: SELECTIVE_CLAIM_NARROWING
+  date_range: 2022-12-13 to 2022-12-16
+EVENT:
+  action: Schedule Case Management Conference
+EVENT:
+  date: 2023-03-03
+  actor: Court
 
 EVENT:
-  date: 2023-02-17
+  action: Ex Parte Application
+EVENT:
+  subject: Motions to Compel
+  actor: Court
+  date: 2024-05-22
+
+  new_date: 2023-10-26
+
+
+  actor: Court
+  date: 2023-04-28
+  action: File Demurrer and Motion to Strike
+EVENT:
+  date: 2023-10-27
+  amounts:
   actor: Court
   action: Schedule consolidated hearing
-  hearing_date: 2023-03-16 08:30
-  matters:
-    - Demurrer
-    - Motion to Strike
-    - Anti-SLAPP (CCP 425.16)
 
-FLAG:
-  type: CONSOLIDATED_INFLECTION_HEARING
+  hearing_date: 2024-05-22 09:00
+  date: 2023-09-27
+  date: 2024-05-13
+EVENT:
+  subject: Motions to Compel Further Discovery Responses
+EVENT:
+  actor: Leo David
+  to: 2024-03-08
+  date: 2024-05-01
+  subject: Sanctions
 
 EVENT:
+EVENT:
+  
+  action: Motion for Terminating Sanctions
+  target: Aurice Veloso
+EVENT:
+
+EVENT:
+  date: 2023-11-29
+FLAG:
+  actor: Court
+
+  actor: Court
+
+  date: 2024-04-17
+  actor: Leo David
+  action: Motions to Compel
+  date: 2024-05-15
+  scope: Portions of Cross-Complaint
+EVENT:
+  subject: Opposition to Motion to Quash Subpoenas
+  date: 2023-09-13
+  date: 2024-06-07
+  actor: Aurice M. Veloso
+
+EVENT:
+  type: EARLY_PROCEDURAL_ESCALATION
+  actor: Court
+EVENT:
+  actor: Parties
+  action: Substitution of Attorney filed
+  date: 2023-08-11
+EVENT:
+  actor: Court
+  action: Ex Parte Application
+  date: 2023-10-13
+  subject: Protective Orders
+EVENT:
+  hearing_date: 2023-04-27
+FLAG:
+  actor: Court
+  discovery: Multiple vehicles
+EVENT:
+
   date: 2023-03-09
+  subject: Motions to Compel
+
+
+  action: Schedule Status Conference
+
+  hearing_date: 2023-10-18
   actor: Leo David
-  action: File replies
-  subjects:
-    - Demurrer
-    - Motion to Strike
-    - Anti-SLAPP
-  sanctions_requested: 12720
-
-FLAG:
-  type: SANCTIONS_ESCALATION_PRE_HEARING
 
 EVENT:
-  date_range: 2022-11-03 to 2022-11-18
-  actor: Aurice M. Veloso
-  action: File original complaint and effect service
-  defendants:
-    - XCVI, LLC
-    - TriNet HR II, Inc.
-    - Construction For Less, Inc.
-
-EVENT:
-  date_range: 2022-12-13 to 2022-12-16
-  actor: Leo David; XCVI LLC; Construction For Less, Inc.
-  action: File Motion to Quash Service
-  basis: Jurisdiction / service challenge
-
-EVENT:
-  date: 2022-12-30
+  hearing_date: 2024-03-26 08:30
   actor: Court
-  action: Consolidate related cases
-  cases:
-    - 22SMCV01934
-    - 22STCV35085
-  lead_case: 22SMCV01934
-
-FLAG:
-  type: CASE_CONSOLIDATED
+EVENT:
+EVENT:
+  action: File Demurrer; Motion to Strike; Anti-SLAPP
+EVENT:
+  subject: Cross-Complaint
+  date: 2023-08-17
 
 EVENT:
-  date: 2023-01-11
-  actor: Aurice M. Veloso
-  action: File Cross-Complaint
-  defendants:
-    - Leo David
-    - Alon Zeltzer
-    - Svetlana Sirot / Savignon
-
-FLAG:
-  type: CROSS_COMPLAINT_IGNITION
-
-EVENT:
-  date_range: 2023-01-18 to 2023-01-19
-  actor: Aurice M. Veloso
-  action: File dismissals and party corrections
-  scope:
-    - AMLease Corporation
-    - Party name/address corrections
-
-EVENT:
-  date_range: 2023-02-06 to 2023-02-10
-  actor: Aurice M. Veloso
-  action: File Motions to Compel Further Discovery Responses
-  targets:
-    - Leo David
-
-EVENT:
-  date: 2023-02-15
-  actor: Leo David
-  action: File Special Motion to Strike (Anti-SLAPP)
-  code: CCP 425.16
+  action: Hold IDC
   hearing_date: 2023-03-16
-
-FLAG:
-  type: ANTI_SLAPP_INITIATED
-
 EVENT:
-  date: 2022-10-19
+  actor: Aurice Veloso
   actor: Leo David
-  action: File original complaint
-  target: Aurice M. Veloso
-  court: Beverly Hills Courthouse
-  department: 200
-
-FLAG:
-  type: LITIGATION_IGNITION
-
-EVENT:
-  date: 2022-10-21
+  scope: Entire action
+  subject: Motions to Compel
+  action: Motions to Compel Deposition
+  hearing_date: 2024-06-07
   actor: Court
-  action: Schedule Case Management Conference
-  cmc_date: 2023-04-17 08:30
+  hearing_date: 2024-04-17 08:30
+  action: Motion for Sanctions
 
 EVENT:
-  date: 2022-11-03
-  actor: Aurice M. Veloso
-  action: File mirror complaint
-  defendants:
-    - Leo David
-    - XCVI, LLC
-    - Construction For Less, Inc.
+  date: 2024-05-22
+  date: 2023-08-14
+  action: Schedule hearings
+  type: REPEATED_HEARING_RESCHEDULING
+EVENT:
+  action: Schedule hearings
+  subject: Discovery motions
+  date: 2024-02-29
+  date: 2023-11-27
 
-FLAG:
   type: MIRROR_SUIT_FILED
+  actor: Parties
+  actor: Court
+  subject: Motion for Sanctions
+EVENT:
+  subject: Motion for Sanctions
+  action: Opposition
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+  disposition: Without prejudice
 
+
+
+  action: Appoint official court reporter
+  actor: Court
+  actor: Court
+  action: Substitution of Attorney filed
+  related_to: Discovery and sanctions motions
+  action: Schedule hearings
+  action: Appoint court reporter
+  date: 2023-11-02
+  actor: Party
+  date: 2024-04-18
+EVENT:
+  action: Motion for Reconsideration filed
+  actor: Court
+
+EVENT:
+  date: 2023-09-27
+  actor: Court
+
+  action: Continue Status Conference
+
+  statutes: CCP 128(a)(4); 177.5
+
+  action: File Answer
+
+  scope: Discovery enforcement
+
+
+  date: 2024-06-07
+  action: Oppositions
+  actor: Leo David
+FLAG:
+  actor: Leo David; XCVI LLC
+  action: Schedule hearings
+
+  actor: Leo David
+  disposition: Sustained with leave to amend
+  actor: Leo David
+  location: Beverly Hills Courthouse, Dept. 205
+  disposition: DENIED
+  action: Schedule hearing
+  date: 2023-04-12
+EVENT:
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+  date: 2024-06-07
+
+EVENT:
+  subject: Motions to Compel
+  type: SAME_DAY_EVENT_DENSITY
+  actor: Aurice Veloso
+  action: Grant motions to compel
+  scope: Business records; Medical records
+
+
+  date: 2024-02-05
+EVENT:
+  action: Stipulation
+  sanctions_requested: 12720
+EVENT:
+
+  action: Issue OSC
+EVENT:
+  date: 2024-05-20
+EVENT:
+  date: 2023-09-12
+EVENT:
+
+
+  actor: Leo David
+  date: 2024-05-10
+  action: Hearing held
+  date_range: 2023-09-19 to 2023-09-21
+EVENT:
+
+  actor: Leo David; XCVI LLC; Construction For Less, Inc.
+  date: 2024-06-05
+  subject: Motions to Quash Subpoenas
+
+  subject: Motion for Sanctions
+EVENT:
+  actor: XCVI LLC; Construction For Less, Inc.
+  actor: Court
+  disposition: DENIED
+  date: 2024-03-08
+  date: 2024-06-24
+  hearing_date: 2023-11-17
+  action: File mirror complaint

@@ -1,27 +1,30 @@
 /**
- * Prima Veritas Dataset Runner — structural_mutation
+ * Prima Veritas Dataset — structural_mutation
+ * NON-KERNEL MATERIALIZER
  *
  * Responsibility
  * ---------------
- * Materializes a deterministic dataset by running the kernel pipeline
- * against a fixed local input file using declared normalization rules.
+ * Convert a structurally mutated JSON input into a deterministic ledger
+ * using kernel modules. Demonstrates structural variance without altering
+ * underlying content.
  *
- * Determinism Guarantees
- * ---------------------
+ * Guarantees
+ * ----------
  * - No randomness
- * - No timestamps
- * - No environment-dependent paths
- * - Fixed ordering only
+ * - No timestamps generated
+ * - Fixed input ordering preserved
  *
  * Non-Goals / Refusals
- * -------------------
- * - Will not infer meaning
- * - Will not clean or repair malformed input
- * - Will not depend on process.cwd()
+ * ---------------------
+ * - Will not interpret meaning
+ * - Will not merge or infer events
+ * - Will not repair malformed data
  *
- * Stability Contract
- * ------------------
- * Changes are breaking and require dataset regeneration.
+ * Notes
+ * ------
+ * This is NON-KERNEL code.
+ * Kernel invariants do not apply.
+ * Changes here do not require kernel version bumps.
  */
 
 import fs from "fs";

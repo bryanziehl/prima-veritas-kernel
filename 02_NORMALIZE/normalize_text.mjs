@@ -28,7 +28,6 @@
  * Any behavior change requires a version bump and replay diff.
  */
 
-
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -38,7 +37,9 @@ import { fileURLToPath } from "url";
  */
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const RULES_PATH = path.join(__dirname, "normalize_rules.json");
+
+// Correct rules file name
+const RULES_PATH = path.join(__dirname, "normalize_text_rules.json");
 
 function loadRules() {
   const raw = fs.readFileSync(RULES_PATH, "utf8");
@@ -78,12 +79,23 @@ export function normalizeText(rawText) {
     }
   }
 
-  // Strip trailing whitespace (spaces + tabs only)
+  // Strip trailing whitespace
   if (rules.strip_trailing_whitespace === true) {
     output = output.replace(/[ \t]+$/gm, "");
   } else if (rules.strip_trailing_whitespace !== undefined) {
     throw new Error(
       "NORMALIZE_TEXT_INVALID_RULE: strip_trailing_whitespace must be boolean"
+    );
+  }
+
+  // Canonical final newline enforcement
+  if (rules.ensure_final_newline === true) {
+    if (!output.endsWith("\n")) {
+      output = output + "\n";
+    }
+  } else if (rules.ensure_final_newline !== undefined) {
+    throw new Error(
+      "NORMALIZE_TEXT_INVALID_RULE: ensure_final_newline must be boolean"
     );
   }
 

@@ -6,8 +6,6 @@
  * Apply deterministic, rule-declared normalization to structured inputs
  * (objects and arrays) without interpretation, inference, or repair.
  *
- * This module performs mechanical structural transforms only.
- *
  * Determinism Guarantees
  * ---------------------
  * - No randomness
@@ -36,9 +34,7 @@ export function normalizeStructured(input, rulesInput) {
     throw new Error("NORMALIZE_STRUCTURED_INVALID_RULES");
   }
 
-  // Accept BOTH:
-  // 1) full rules document { meta, rules, invariants, refusals }
-  // 2) raw rules object { sort_object_keys, enforce_array_order }
+  // Canonical: accept only explicit rules, never apply defaults
   const rules =
     typeof rulesInput.rules === "object" && rulesInput.rules !== null
       ? rulesInput.rules

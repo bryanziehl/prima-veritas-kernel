@@ -1,41 +1,29 @@
 /**
- * Prima Veritas Dataset — LA Court Adversarial
+ * Prima Veritas Dataset Materializer — LA Court Adversarial
+ * NON-KERNEL CODE
  *
  * Responsibility
  * ---------------
- * Convert a large, pre-extracted ROA text timeline into
- * a deterministic kernel ledger under adversarial ordering.
+ * Read the already-shuffled input.json (structured records),
+ * apply canonical structured normalization,
+ * then run the full kernel pipeline:
+ * normalize → atomize → ledger → replay.
  *
- * This dataset intentionally violates input ordering to test
- * kernel stability, replay guarantees, and hash invariance.
- *
- * Determinism Guarantees
- * ---------------------
- * - No randomness
- * - No timestamps added
- * - Deterministic adversarial ordering (lexicographic sort)
- * - Explicit text → record mapping only
- *
- * Non-Goals
- * ---------
- * - Will not interpret legal meaning
- * - Will not merge or infer events
- * - Will not repair malformed lines
- * - Will not attempt to restore original order
- *
- * Stability Contract
+ * Determinism Notes
  * ------------------
- * - This file is test-only and non-canonical
- * - Any change must preserve deterministic adversarial behavior
+ * - Ordering mutation already applied by mutate_order.mjs
+ * - No randomness here
+ * - Must match baseline structured schema exactly
  */
 
 import fs from "fs";
 import path from "path";
-import crypto from "crypto";
 
-import { normalizeText } from "../../02_NORMALIZE/normalize_text.mjs";
+import { normalizeStructured } from "../../02_NORMALIZE/normalize_structured.mjs";
 import { atomizeEvents } from "../../03_ATOMIZE/atomize_events.mjs";
 import { buildLedger } from "../../04_LEDGER/build_ledger.mjs";
+import { replaySequence } from "../../05_REPLAY/replay_sequence.mjs";
+
 import {
   kernel_version,
   spec_version,
@@ -43,72 +31,41 @@ import {
 } from "../../00_SYSTEM/kernel_constants.mjs";
 
 const DATASET_DIR = path.resolve(".");
-const INPUT_PATH = path.join(DATASET_DIR, "input.txt");
+const INPUT_PATH = path.join(DATASET_DIR, "input.json");
 
-function sha256(obj) {
-  return crypto
-    .createHash(hash_algorithm)
-    .update(JSON.stringify(obj))
-    .digest("hex");
+// 1. READ SHUFFLED STRUCTURED INPUT
+const raw = JSON.parse(fs.readFileSync(INPUT_PATH, "utf8"));
+
+if (!Array.isArray(raw)) {
+  console.error("ERROR: input.json must contain an array of structured records.");
+  process.exit(1);
 }
 
-// 1. READ RAW TEXT (dataset responsibility)
-const rawText = fs.readFileSync(INPUT_PATH, "utf8");
-
-// 2. NORMALIZE TEXT
-const normalizedText = normalizeText(rawText);
-
-// 3. BASELINE TEXT LINES
-const lines = normalizedText
-  .split("\n")
-  .filter(line => line.trim().length > 0);
-
-// 4. ADVERSARIAL TRANSFORM (deterministic reorder)
-const adversarialLines = [...lines].sort();
-
-// 5. EXPLICIT TEXT → RECORD SEQUENCE
-const records = adversarialLines.map((line, index) => ({
-  event_id: crypto
-    .createHash(hash_algorithm)
-    .update(line)
-    .digest("hex"),
-  sequence_index: index,
-  timestamp: null,
-  source: {
-    origin: "la_court_roa",
-    location: `sorted_line_${index}`
-  },
-  payload: {
-    text: line
-  },
-  provenance: {
+// 2. NORMALIZE (canonical structured normalization)
+const normalized = raw.map((record, index) =>
+  normalizeStructured(record, {
     ingest_id: "la_court_adversarial",
-    normalize_id: "normalize_text"
-  },
-  notes: null
-}));
+    sequence_index: index
+  })
+);
 
-// 6. ATOMIZE
-const atoms = atomizeEvents(records);
+// 3. ATOMIZE
+const atoms = atomizeEvents(normalized);
+fs.writeFileSync("atoms.json", JSON.stringify(atoms, null, 2));
 
-// 7. LEDGER
+// 4. LEDGER
 const ledger = buildLedger(atoms, {
   kernel_version,
   spec_version,
   hash_algorithm
 });
-
-// 8. EXPECTED HASH (kernel canonical)
-const expected_hash = sha256({
-  kernel_version,
-  spec_version,
-  hash_algorithm,
-  ledger_hash: ledger.ledger_hash
-});
-
-// WRITE FILES
-fs.writeFileSync("atoms.json", JSON.stringify(atoms, null, 2));
 fs.writeFileSync("ledger.json", JSON.stringify(ledger, null, 2));
-fs.writeFileSync("expected_hash.txt", expected_hash + "\n");
 
-console.log("LA COURT ADVERSARIAL DATASET MATERIALIZED");
+// 5. EXPECTED HASH
+fs.writeFileSync("expected_hash.txt", ledger.ledger_hash + "\n");
+
+// 6. REPLAY
+const replay = replaySequence(ledger);
+fs.writeFileSync("replay.json", JSON.stringify(replay, null, 2));
+
+console.log("LA COURT ADVERSARIAL MATERIALIZED");

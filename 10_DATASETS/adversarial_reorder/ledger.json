@@ -9,7 +9,7 @@
     {
       "index": 0,
       "event_id": "deterministic:0",
-      "event_hash": "f25e6c4c6cc8ed50bdaae5b854b5ca727933ffce12b1a24f6717691443f7f21f",
+      "event_hash": "075ebf4a6e37d02e2fe18ba65fdd6c81b358f9756d8d95b7d4854ecc6ee2c377",
       "previous_hash": null,
       "event": {
         "event_id": "deterministic:0",
@@ -18,17 +18,17 @@
         "source": null,
         "payload": {
           "filename": "input.json",
-          "hash_sha256": "1d32830278311d3b309cafa66389aa8780e9c0903b0e7f349679e827f385e175",
+          "hash_sha256": "402fb45080820be7a79789ee1be2456718a7e2e78353745af97e60bef6042209",
           "path": "C:\\PRIMA_VERITAS_KERNEL\\10_DATASETS\\adversarial_reorder\\input.json",
-          "raw_bytes_base64": "Ww0KICB7DQogICAgImlkIjogIkEiLA0KICAgICJ0aW1lc3RhbXAiOiAiMjAyNC0wMS0wMVQwMDowMDowMVoiLA0KICAgICJ2YWx1ZSI6IDEwMA0KICB9LA0KICB7DQogICAgImlkIjogIkIiLA0KICAgICJ0aW1lc3RhbXAiOiAiMjAyNC0wMS0wMVQwMDowMDowMloiLA0KICAgICJ2YWx1ZSI6IDIwMA0KICB9LA0KICB7DQogICAgImlkIjogIkMiLA0KICAgICJ0aW1lc3RhbXAiOiAiMjAyNC0wMS0wMVQwMDowMDowM1oiLA0KICAgICJ2YWx1ZSI6IDMwMA0KICB9DQpdDQo=",
-          "size_bytes": 266,
+          "raw_bytes_base64": "Ww0KICB7DQogICAgImlkIjogNDIsDQogICAgInRzIjogIjIwMjQtMTItMTBUMTA6MDA6MDBaIiwNCiAgICAiYWN0b3IiOiAic2NoZWR1bGVyIiwNCiAgICAiYWN0aW9uIjogInRhc2tfY29tcGxldGVkIg0KICB9LA0KICB7DQogICAgImlkIjogNSwNCiAgICAidHMiOiAiMjAyNC0xMi0wOFQwNTowMDowMFoiLA0KICAgICJhY3RvciI6ICJzeXN0ZW0iLA0KICAgICJhY3Rpb24iOiAiYm9vdCINCiAgfSwNCiAgew0KICAgICJpZCI6IDE3LA0KICAgICJ0cyI6ICIyMDI0LTEyLTA5VDEyOjAwOjAwWiIsDQogICAgImFjdG9yIjogIndvcmtlciIsDQogICAgImFjdGlvbiI6ICJqb2Jfc3RhcnRlZCINCiAgfSwNCiAgew0KICAgICJpZCI6IDk5LA0KICAgICJ0cyI6ICIyMDI0LTEyLTEwVDEwOjAxOjAwWiIsDQogICAgImFjdG9yIjogInNjaGVkdWxlciIsDQogICAgImFjdGlvbiI6ICJ0YXNrX3NjaGVkdWxlZCINCiAgfSwNCiAgew0KICAgICJpZCI6IDEsDQogICAgInRzIjogIjIwMjQtMTItMDhUMDA6MDA6MDBaIiwNCiAgICAiYWN0b3IiOiAic3lzdGVtIiwNCiAgICAiYWN0aW9uIjogImluaXQiDQogIH0NCl0NCg==",
+          "size_bytes": 571,
           "type": "INGEST_FILE"
         },
         "provenance": null,
         "notes": null
       },
-      "entry_hash": "2e8514b82e072f050f8aef493e92d9a2880e961d05e2624ef3549800acfc5ad7"
+      "entry_hash": "a4fcda52b36b3ce97516f6ad669e1a3734e4caab4ae549e8ec69967a36b0841b"
     }
   ],
-  "ledger_hash": "c5096863ffbbd9f5ac15a14db939ba2b5308c2429b0796c0be58f404abb4d8b1"
+  "ledger_hash": "d1f6cf228ee5912e1340c881db2dafa459230e3c631b8799142e9e8e7c1fc9f9"
 }

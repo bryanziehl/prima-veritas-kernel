@@ -1,0 +1,21 @@
+{
+  "events": [
+    {
+      "event_id": "deterministic:0",
+      "sequence_index": 0,
+      "timestamp": null,
+      "source": null,
+      "payload": {
+        "filename": "input.json",
+        "hash_sha256": "402fb45080820be7a79789ee1be2456718a7e2e78353745af97e60bef6042209",
+        "path": "C:\\PRIMA_VERITAS_KERNEL\\10_DATASETS\\adversarial_reorder\\input.json",
+        "raw_bytes_base64": "Ww0KICB7DQogICAgImlkIjogNDIsDQogICAgInRzIjogIjIwMjQtMTItMTBUMTA6MDA6MDBaIiwNCiAgICAiYWN0b3IiOiAic2NoZWR1bGVyIiwNCiAgICAiYWN0aW9uIjogInRhc2tfY29tcGxldGVkIg0KICB9LA0KICB7DQogICAgImlkIjogNSwNCiAgICAidHMiOiAiMjAyNC0xMi0wOFQwNTowMDowMFoiLA0KICAgICJhY3RvciI6ICJzeXN0ZW0iLA0KICAgICJhY3Rpb24iOiAiYm9vdCINCiAgfSwNCiAgew0KICAgICJpZCI6IDE3LA0KICAgICJ0cyI6ICIyMDI0LTEyLTA5VDEyOjAwOjAwWiIsDQogICAgImFjdG9yIjogIndvcmtlciIsDQogICAgImFjdGlvbiI6ICJqb2Jfc3RhcnRlZCINCiAgfSwNCiAgew0KICAgICJpZCI6IDk5LA0KICAgICJ0cyI6ICIyMDI0LTEyLTEwVDEwOjAxOjAwWiIsDQogICAgImFjdG9yIjogInNjaGVkdWxlciIsDQogICAgImFjdGlvbiI6ICJ0YXNrX3NjaGVkdWxlZCINCiAgfSwNCiAgew0KICAgICJpZCI6IDEsDQogICAgInRzIjogIjIwMjQtMTItMDhUMDA6MDA6MDBaIiwNCiAgICAiYWN0b3IiOiAic3lzdGVtIiwNCiAgICAiYWN0aW9uIjogImluaXQiDQogIH0NCl0NCg==",
+        "size_bytes": 571,
+        "type": "INGEST_FILE"
+      },
+      "provenance": null,
+      "notes": null
+    }
+  ],
+  "finalHash": "d1f6cf228ee5912e1340c881db2dafa459230e3c631b8799142e9e8e7c1fc9f9"
+}
