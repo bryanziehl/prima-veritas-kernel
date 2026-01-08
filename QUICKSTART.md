@@ -1,6 +1,6 @@
 Quickstart — Prima Veritas Kernel
 
-(Zero setup. Works from any folder.)
+(Zero setup. No installation. Explicit paths only.)
 
 📌 Note for non-technical users
 
@@ -20,11 +20,21 @@ PS C:\>
 
 
 You do not need programming knowledge.
-Just copy and paste the commands below.
+Just copy and paste the commands below exactly.
+
+Execution Model (Important)
+
+Prima Veritas has two distinct execution contexts:
+
+Dataset materialization (generates proof data)
+
+Kernel verification (verifies proof data)
+
+This separation is intentional and enforced by design.
 
 1. Materialize a dataset
 
-Run this from any folder:
+You may run the dataset materializer from any folder, because the path is explicit.
 
 node C:\PRIMA_VERITAS_KERNEL\10_DATASETS\la_court_baseline\run.mjs
 
@@ -39,20 +49,31 @@ expected_hash.txt
 
 All outputs are bit-for-bit identical across all machines.
 
-2. Verify the dataset
+No configuration.
+No environment setup.
+No interpretation.
 
-(Updated — uses the real CLI contract: three required flags)
+2. Verify the dataset (Kernel CLI)
 
-Run this from any folder:
+The kernel verification CLI may also be run from any folder, as long as all paths are explicit.
 
-node C:\PRIMA_VERITAS_KERNEL\08_CLI\pv_verify.mjs --ledger C:\PRIMA_VERITAS_KERNEL\10_DATASETS\la_court_baseline\ledger.json --atoms C:\PRIMA_VERITAS_KERNEL\10_DATASETS\la_court_baseline\atoms.json --expected-hash C:\PRIMA_VERITAS_KERNEL\10_DATASETS\la_court_baseline\expected_hash.txt
+node C:\PRIMA_VERITAS_KERNEL\08_CLI\pv_verify.mjs `
+  --ledger C:\PRIMA_VERITAS_KERNEL\10_DATASETS\la_court_baseline\ledger.json `
+  --atoms  C:\PRIMA_VERITAS_KERNEL\10_DATASETS\la_court_baseline\atoms.json `
+  --expected-hash C:\PRIMA_VERITAS_KERNEL\10_DATASETS\la_court_baseline\expected_hash.txt
 
 
-If the verification passes, the dataset is a valid Prima Veritas kernel proof.
+If verification passes, the dataset is a valid Prima Veritas kernel proof.
 
-No navigation required.
-No setup required.
-Pure determinism.
+Verification is binary:
+
+✅ PASS
+
+❌ FAIL
+
+No explanations.
+No repairs.
+No inference.
 
 3. View the canonical truth artifacts
 
@@ -84,7 +105,11 @@ The deterministic replay kernel lives under:
 08_CLI
 
 
-See KERNEL_CHARTER.md and SYSTEM_MAP.md for full rules and invariants.
+Full rules, scope, and invariants are defined in:
+
+KERNEL_CHARTER.md
+
+SYSTEM_MAP.md
 
 ✅ Done
 
@@ -94,6 +119,6 @@ no installation
 
 no configuration
 
-no technical experience
+no prior technical experience
 
 Prima Veritas is now live, deterministic, and verifiable end-to-end on your machine.
