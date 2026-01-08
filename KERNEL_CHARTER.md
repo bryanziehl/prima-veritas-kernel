@@ -2,7 +2,7 @@ PRIMA VERITAS — KERNEL CHARTER (v1.0.0)
 
 Purpose
 
-The Prima Veritas Kernel exists to produce deterministic, replayable, verifiable truth artifacts from structured inputs, without interpretation, inference, correction, or enrichment.
+The Prima Veritas Kernel exists to produce deterministic, replayable, verifiable event-ledger artifacts from structured inputs, without interpretation, inference, correction, or enrichment.
 
 The kernel is a truth-preserving machine, not:
 
